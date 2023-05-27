@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9.66%;
+  padding-right: 9.66%;
+  height: 89px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  border: 1px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
+  background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
+  /* glass */
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(20px);
+  /*background-image: url(img/noise-navbar.svg);*/
+}
+
+.hamburguesa {
+  display: none;
+}
+
+.dropdown {
+  /* display: none; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.navbar .hamburguesa:checked~.dropdown {
+  display: block;
+}
+
+.dropdown-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-family: exo;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-family: exo;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  mix-blend-mode: overlay;
+}
+
+
+.logo-bolsa {
+  color: #000000;
+  mix-blend-mode: overlay;
+}
+
+.logo {
+  padding-right: 20%;
+}
+
+/*.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3534px;
+  background: linear-gradient(153.13deg, #B5C5BC 16.81%, #E8DEC0 49.36%, #DCBC9C 79.94%);
+
+  border-radius: 0;
+  z-index: -1;
+  /* Colocar el rectángulo detrás de los demás elementos */
+.container {
+  position: relative;
+  width: 100%;
+  height: 3534px;
+  overflow: auto;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(153.13deg, #B5C5BC 16.81%, #E8DEC0 49.36%, #DCBC9C 79.94%);
+  border-radius: 0;
+  z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .background {
+    height: 1807px;
+    padding: 10px;
+  }
+
+  .container {
+    height: 1807px;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar .hamburguesa {
+    display: block;
+  }
+
+  .navbar-buttons {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 40%;
+  }
+
+
+
+
+}

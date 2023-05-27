@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="navbar-buttons">
+            <a href="#">Shop</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <button class="hamburguesa">
+            <img src="img/hambur.svg" alt="menu hamburguesa">
+        </button>
+        <div class="dropdown">
+            <button class="dropdown-button">Opción 1</button>
+            <button class="dropdown-button">Opción 2</button>
+            <button class="dropdown-button">Opción 3</button>
+        </div>
+
+
+        <div id="mensaje"></div>
+
+        <img class="logo" src="img/logo.svg" alt="logo fnc">
+        <img class="logo-bolsa" src="img/carrito.svg" alt="logo fnc">
+
+
+
+    </header>
+
+    <div class="container">
+        <div class="background"></div>
+        <div class="content">
+            <!-- Contenido del cuadrado que se desplazará -->
+        </div>
+    </div>
+
+    <script>
+        /*   const toggleCheckbox = document.getElementById('toggle-menu');
+          const dropdown = document.querySelector('.dropdown');
+      
+          toggleCheckbox.addEventListener('change', function() {
+            dropdown.style.display = this.checked ? 'block' : 'none';
+          }); */
+        const hamburguesa = document.querySelector('.hamburguesa');
+        hamburguesa.addEventListener('click', function () {
+            mensajeDiv.textContent = "Soy un botón";
+        });
+    </script>
+</body>
+
+</html>
