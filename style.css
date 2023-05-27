@@ -16,12 +16,10 @@ a {
   height: 89px;
   align-items: center;
   z-index: 0;
-
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  border: 1px solid;
+  min-width: 100%;
   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
   background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
   /* glass */
@@ -50,10 +48,11 @@ a {
 .logo-bolsa {
   color: #000000;
   mix-blend-mode: overlay;
+  max-width: 30%;
 }
 
 .logo {
-  padding-right: 20%;
+  max-width: 50%;
 }
 
 /* Colocar el rectángulo detrás de los demás elementos */
@@ -65,24 +64,10 @@ a {
 }
 
 .fnc {
-  /* width: 100%;
-  height: 100%; */
   left: 10px;
   top: 10px;
   position: fixed;
 }
-
-
-
-/*.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(153.13deg, #B5C5BC 16.81%, #E8DEC0 49.36%, #DCBC9C 79.94%);
-  border-radius: 0;
-  z-index: -1;*/
 
 #menu-toggle {
   display: none;
@@ -125,7 +110,9 @@ a {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+
+
+@media only screen and (max-width: 760px) {
   .background {
     height: 1807px;
     padding: 10px;
@@ -137,10 +124,30 @@ a {
 
   .navbar {
     height: 80px;
+    justify-content: space-between;
+    padding-left: 9.66%;
+    padding-right: 9.66%;
+    height: 89px;
+    align-items: center;
+    z-index: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 
   .navbar .hamburguesa {
     display: block;
+    left: 11.94%;
+    right: 80.28%;
+
+  }
+
+  .logo-bolsa {
+    width: 31px;
+    height: 31px;
+
   }
 
   .navbar-buttons {
@@ -148,7 +155,9 @@ a {
   }
 
   .logo {
-    padding-left: 40%;
+    justify-content: center;
+    width: 80px;
+    height: 42px;
   }
 
   .dropdown-button {
@@ -165,6 +174,11 @@ a {
     font-size: 24px;
     line-height: 32px;
     color: #000;
+  }
+
+  .img-logo-fnc {
+    width: 146px;
+    height: 81px;
   }
 
 
