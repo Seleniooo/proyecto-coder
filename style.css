@@ -15,11 +15,11 @@ a {
   padding-right: 9.66%;
   height: 89px;
   align-items: center;
-  position: fixed;
+  /*z-index: -2;
+  position: relative;
   top: 0;
-  left: 0;
+  left: 0;*/
   width: 100%;
-
   border: 1px solid;
   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
   background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
@@ -31,36 +31,6 @@ a {
 
 .hamburguesa {
   display: none;
-}
-
-.dropdown {
-  /* display: none; */
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-.navbar .hamburguesa:checked~.dropdown {
-  display: block;
-}
-
-.dropdown-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background-color: #fff;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  font-family: exo;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  color: #000;
 }
 
 .navbar-buttons {
@@ -76,7 +46,6 @@ a {
   mix-blend-mode: overlay;
 }
 
-
 .logo-bolsa {
   color: #000000;
   mix-blend-mode: overlay;
@@ -86,21 +55,11 @@ a {
   padding-right: 20%;
 }
 
-/*.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3534px;
-  background: linear-gradient(153.13deg, #B5C5BC 16.81%, #E8DEC0 49.36%, #DCBC9C 79.94%);
-
-  border-radius: 0;
-  z-index: -1;
-  /* Colocar el rectángulo detrás de los demás elementos */
+/* Colocar el rectángulo detrás de los demás elementos */
 .container {
   position: relative;
   width: 100%;
-  height: 3534px;
+  height: 3350px;
   overflow: auto;
 }
 
@@ -115,10 +74,31 @@ a {
   z-index: -1;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #eb010100;
+  border: 1px solid #0d02af00;
+}
+
+.dropdown-button {
+  display: none;
+}
+
+
+.navbar #menu-toggle:checked~.dropdown {
+  display: block;
+}
+
+
 
 @media (max-width: 768px) {
-
-
   .background {
     height: 1807px;
     padding: 10px;
@@ -144,7 +124,21 @@ a {
     padding-left: 40%;
   }
 
-
+  .dropdown-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-family: exo;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+  }
 
 
 }
