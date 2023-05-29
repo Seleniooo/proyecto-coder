@@ -37,7 +37,7 @@ body a {
   /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
   min-height: 100vh;
   /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
-  background-image: url(./img/fondo-shop.svg);
+  background-image: url(./img/fondo-nosotros.svg);
   background-position: center top;
   background-size: cover;
 }
@@ -46,7 +46,6 @@ main {
   height: 200vh;
   width: auto;
 }
-
 
 .navbar-s {
   display: flex;
@@ -67,11 +66,6 @@ main {
   backdrop-filter: blur(20px);
   mix-blend-mode: overlay;
   background-image: url(img/noise-navbar.svg);
-}
-
-.navbar-s a {
-  color: #000000;
-
 }
 
 .hamburguesa {
@@ -103,13 +97,9 @@ main {
   max-width: 50%;
 }
 
-/* Colocar el rectángulo detrás de los demás elementos */
-/* .container {
-  position: relative;
-  width: 100%;
-  height: 3350px;
-  overflow: auto;
-} */
+.logo:hover {
+  cursor: pointer;
+}
 
 .fnc {
   left: 10px;
@@ -139,7 +129,6 @@ main {
 #menu-toggle:checked~.dropdown {
   display: block;
 }
-
 
 .img-logo-fnc {
   position: fixed;
@@ -218,42 +207,40 @@ main {
 
 }
 
-
 .card-text {
   font-size: 1rem;
 }
 
 /*nosotroz*/
-
 .nos-container {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 400px;
-
-
+  margin-top: 19vw;
 }
 
 .nos-card {
   display: flex;
   flex-wrap: wrap;
-  position: fixed;
+  flex-flow: wrap;
   z-index: -3;
   padding: 2vw;
-  height: 30vw;
+  height: fit-content;
   width: 60.57vw;
+  min-width: min-content;
   border-radius: 8px;
-
   background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%);
   /* glass */
-
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 8px;
+}
+
+.nos-text {
+  padding: 2em;
+  font-family: 'Almarai', sans-serif;
 }
 
 @media screen and (max-width: 1440px) {
