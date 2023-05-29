@@ -42,9 +42,25 @@ body a {
   background-size: cover;
 }
 
+.body-contacto {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
+  min-height: 100vh;
+  /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
+  background-image: url(./img/fondo-nosotros.svg);
+  background-position: center top;
+  background-size: cover;
+}
+
 main {
   height: 200vh;
   width: auto;
+  background-image: url('./img/fnc.svg');
+  background-repeat: no-repeat;
+  background-position-x: 10vh;
+  background-position-y: 10vh;
+  /* margin-top: 19vw; */
 }
 
 .navbar-s {
@@ -224,7 +240,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-flow: wrap;
-  z-index: -3;
+  z-index: 0;
   padding: 2vw;
   height: fit-content;
   width: 60.57vw;
@@ -242,6 +258,187 @@ main {
   padding: 2em;
   font-family: 'Almarai', sans-serif;
 }
+
+
+
+
+
+
+
+/*CART*/
+
+
+.container-carrito {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 1rem;
+  height: 568px;
+  width: 456px;
+
+
+  background: linear-gradient(154.69deg, rgba(255, 255, 255, 0.72) -3.5%, rgba(255, 255, 255, 0.14) 100.5%);
+  /* glass */
+
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 8px 0px 0px 8px;
+
+}
+
+.carro-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carro-titulo img {
+  background-color: aquamarine;
+  margin-left: 10px;
+}
+
+.carro-titulo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Exo';
+  font-style: normal;
+  margin-right: auto;
+  margin-left: auto;
+
+  letter-spacing: 1.54469px;
+
+  color: #000000;
+}
+
+.frame-items {
+  height: 306px;
+  width: 350px;
+  border-radius: 0px;
+
+}
+
+.total-precio {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.total-precio p {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 9px;
+  letter-spacing: 0.0446889px;
+  color: #6028FF;
+}
+
+.buttons-cart {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  height: 50px;
+  width: 376px;
+  border-radius: 25px;
+  background: linear-gradient(104.73deg, rgba(96, 40, 255, 0.8) 16.35%, rgba(255, 40, 92, 0.408) 107.34%);
+}
+
+.concretar-pedido {
+  font-family: Exo;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 4.544688701629639px;
+  text-align: center;
+
+}
+
+.seguir-viendo {
+  align-self: center;
+  padding: 1rem;
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 3.04469px;
+
+}
+
+
+
+/* contacto */
+.contactos-container {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.consulta-container {
+  display: flex;
+  padding: 3vw;
+  height: fit-content;
+  width: min-content;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  border-radius: 8px;
+  background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%);
+  /* glass */
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 25%;
+}
+
+.title-consulta {
+  font-family: 'Fira Sans Condensed';
+  color: #ff285ec1;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+}
+
+.texto-consulta {
+
+  padding-top: 2em;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  font-family: 'Almarai', sans-serif;
+  padding-bottom: 3em;
+  font-size: 1.6vw;
+}
+
+.button-consulta {
+  background: linear-gradient(104.73deg, rgba(96, 40, 255, 0.8) 16.35%, rgba(255, 40, 92, 0.408) 107.34%);
+  border-radius: 25px;
+  height: 3vw;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Exo', sans-serif;
+  ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1440px) {
   .container-cards {
