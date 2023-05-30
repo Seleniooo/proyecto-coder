@@ -31,7 +31,7 @@
             <img src="../img//hambur.svg" alt="menu hamburguesa">
         </label>
 
-        <div class="dropdown">
+        <div class="dropdown-s">
             <a href="../fnc/shop.html">
                 <button class="dropdown-button">Shop</button>
             </a>
@@ -46,16 +46,14 @@
 
         <img class="logo" src="../img/logo.svg" onclick="location.href=''+location.href.slice(0,-17)+'index.html'"
             alt="logo fnc">
-        <img class="logo-bolsa" src="../img/carrito.svg" alt="mi carrito">
+        <a class="icono-cart" href="../fnc/cart.html"><img class="logo-bolsa" src="../img/carrito.svg" alt="mi carrito">
+        </a>
 
 
 
     </header>
 
-
-
-    <main>
-
+    <main class="main-contactos">
         <div class="contactos-container">
             <div class="consulta-container">
                 <h3 class="title-consulta">¿ALGUNA CONSULTA?</h3>
@@ -64,16 +62,15 @@
                     ullamcorper ultrices ultrices sit. Dui tortor non amet tellus neque.
                 </p>
                 <div class="button-consulta">
-                    <a href="">
-                        <button style="border: none; background: none;
-                                color: white;font-size: 1.5vw;">CONTACTANOS</button>
+                    <a class="link-consulta" href="#footer">
+                        <span> CONTACTANOS </span>
                     </a>
                 </div>
             </div>
         </div>
 
     </main>
-    <footer>
+    <footer id="footer">
         <section class="footer-container">
             <div class="links-footer">
                 <a href="#">Instagram</a>

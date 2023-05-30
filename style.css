@@ -9,6 +9,19 @@ body a {
   color: inherit;
 }
 
+body a:hover,
+body a:active,
+body a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.icono-cart img {
+  max-width: 100%;
+  max-height: 100%
+}
+
 .body-index {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -48,6 +61,17 @@ body a {
   /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
   min-height: 100vh;
   /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
+  background-image: url(./img/fondo-contacto.svg);
+  background-position: center top;
+  background-size: cover;
+}
+
+.body-carrito {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
+  min-height: 100vh;
+  /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
   background-image: url(./img/fondo-nosotros.svg);
   background-position: center top;
   background-size: cover;
@@ -56,10 +80,13 @@ body a {
 main {
   height: 200vh;
   width: auto;
+}
+
+.main-index {
   background-image: url('./img/fnc.svg');
   background-repeat: no-repeat;
   background-position-x: 10vh;
-  background-position-y: 10vh;
+  background-position-y: 14vh;
   /* margin-top: 19vw; */
 }
 
@@ -70,7 +97,7 @@ main {
   padding-right: 9.66%;
   height: 89px;
   align-items: center;
-  z-index: auto;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
@@ -88,6 +115,10 @@ main {
   display: none;
 }
 
+.hamburguesa:hover {
+  cursor: pointer;
+}
+
 .navbar-buttons {
   display: flex;
   align-items: center;
@@ -97,12 +128,8 @@ main {
   font-weight: bolder;
   font-size: 1.58vw;
   line-height: 32px;
-  color: #000000;
 }
 
-.main-container {
-  margin-top: 150px;
-}
 
 .logo-bolsa {
   color: #000000;
@@ -127,22 +154,23 @@ main {
   display: none;
 }
 
-.dropdown {
+.dropdown-s {
   display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  margin-top: 32vh;
   justify-content: center;
   background-color: #eb010100;
   border: 1px solid #0d02af00;
-  z-index: 1;
+  z-index: 5;
 }
 
 .dropdown-button {
   display: none;
+  position: fixed;
 }
 
 
-#menu-toggle:checked~.dropdown {
+#menu-toggle:checked~.dropdown-s {
   display: block;
 }
 
@@ -179,12 +207,30 @@ main {
   font-size: 1.58vw;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*SHOP*/
 .frame-container {
   height: 450px;
   /* justify-content: center; */
-  /* Altura fija del marco */
-  /* Estilo del marco */
   padding: 10px;
   /* Espacio interno del marco */
   overflow: hidden;
@@ -198,6 +244,20 @@ main {
   height: 100%;
   overflow: auto;
   padding-bottom: 20px;
+}
+
+.card-scroll-container::-webkit-scrollbar {
+  width: 16px;
+}
+
+.card-scroll-container::-webkit-scrollbar-track {
+  background: linear-gradient(163.82deg, rgba(189, 174, 197, 0.3) 1.33%, rgba(195, 88, 245, 0.164) 95.23%) !important;
+  border-radius: 100px;
+}
+
+.card-scroll-container::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  border-radius: 100px;
 }
 
 .container-cards {
@@ -227,13 +287,38 @@ main {
   font-size: 1rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*nosotroz*/
 .nos-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 19vw;
+  margin-top: 15vh;
 }
 
 .nos-card {
@@ -265,26 +350,41 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*CART*/
 
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+
+}
 
 .container-carrito {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  position: fixed;
   padding: 1rem;
-  height: 568px;
-  width: 456px;
-
+  height: fit-content;
+  width: fit-content;
 
   background: linear-gradient(154.69deg, rgba(255, 255, 255, 0.72) -3.5%, rgba(255, 255, 255, 0.14) 100.5%);
   /* glass */
 
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(20px);
-  /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 8px 8px 8px;
 
 }
 
@@ -292,17 +392,17 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .carro-titulo img {
-  background-color: aquamarine;
   margin-left: 10px;
 }
 
 .carro-titulo h1 {
   font-size: 24px;
   font-weight: 700;
-  font-family: 'Exo';
+  font-family: 'Exo', sans-serif;
   font-style: normal;
   margin-right: auto;
   margin-left: auto;
@@ -313,20 +413,25 @@ main {
 }
 
 .frame-items {
-  height: 306px;
-  width: 350px;
+  align-self: center;
   border-radius: 0px;
+  width: 51.49vw;
+  height: 20vw;
+
+  overflow: hidden;
+  overflow: auto;
 
 }
 
 .total-precio {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
+
 }
 
 .total-precio p {
-  font-family: 'Exo';
+  font-family: 'Exo', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -337,32 +442,36 @@ main {
 
 .buttons-cart {
   display: flex;
-  align-items: center;
+  align-self: center;
   justify-self: center;
   justify-content: center;
   height: 50px;
   width: 376px;
+
   border-radius: 25px;
   background: linear-gradient(104.73deg, rgba(96, 40, 255, 0.8) 16.35%, rgba(255, 40, 92, 0.408) 107.34%);
 }
 
 .concretar-pedido {
-  font-family: Exo;
+  font-family: 'Exo', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 4.544688701629639px;
   text-align: center;
+  border: none;
+  background: none;
 
 }
 
 .seguir-viendo {
   align-self: center;
   padding: 1rem;
-  font-family: 'Exo';
+  font-family: 'Exo', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+
   line-height: 20px;
   text-align: right;
   letter-spacing: 3.04469px;
@@ -371,11 +480,107 @@ main {
 
 
 
+
+
+/*frame lista de productos*/
+.frame-items {
+  padding: 3rem;
+  /* height: 8rem; */
+}
+
+.caja-lista {
+  display: flex;
+  padding: 1rem;
+  /*   border-style: solid;
+  border-color: red; */
+}
+
+.img-cart img {
+  width: 77px;
+  height: 71px;
+
+}
+
+.img-cart {
+  border-style: solid;
+  border-color: #6028FF;
+}
+
+.segunda-columna {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  /*   border-style: solid;
+  border-color: darkgreen; */
+  align-items: center;
+}
+
+.tercera-columna {
+  display: flex;
+  /*   border-style: solid;
+  border-color: yellow; */
+  align-items: center;
+}
+
+.eliminar-cart {
+  /* align-self: center; */
+}
+
+.mas-menos {
+  display: flex;
+  height: min-content;
+  width: min-content;
+  align-items: center;
+}
+
+.mas-menos button {
+  width: 31px;
+  height: 31px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* contacto */
+
+
+.main-contactos {
+  background-image: url('./img/fnc.svg');
+  background-repeat: no-repeat;
+  background-position-x: 10vh;
+  background-position-y: 14vh;
+  margin-top: 10vh;
+}
+
+.buttons-contacto a {
+  text-decoration: none !important;
+}
+
 .contactos-container {
   padding-top: 70px;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .consulta-container {
@@ -392,11 +597,11 @@ main {
   backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 8px;
-  justify-content: center;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   margin-left: 25%;
+  z-index: 1;
 }
 
 .title-consulta {
@@ -404,6 +609,7 @@ main {
   color: #ff285ec1;
   flex-wrap: wrap;
   flex-flow: wrap;
+  font-size: 2vw;
 }
 
 .texto-consulta {
@@ -416,7 +622,7 @@ main {
   font-size: 1.6vw;
 }
 
-.button-consulta {
+.link-consulta {
   background: linear-gradient(104.73deg, rgba(96, 40, 255, 0.8) 16.35%, rgba(255, 40, 92, 0.408) 107.34%);
   border-radius: 25px;
   height: 3vw;
@@ -425,8 +631,28 @@ main {
   justify-content: center;
   align-items: center;
   font-family: 'Exo', sans-serif;
-  ;
+  color: white;
+  scroll-behavior: smooth;
 }
+
+.link-consulta:hover {
+  cursor: pointer;
+}
+
+.button-consulta a:hover,
+.button-consulta a:active,
+.button-consulta a:focus {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -460,12 +686,11 @@ main {
     padding-right: 9.66%;
     height: 89px;
     align-items: center;
-    z-index: 0;
-
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 3;
   }
 
   .navbar-s .hamburguesa {
@@ -494,12 +719,12 @@ main {
     z-index: 1;
   }
 
-  .dropdown {
-    z-index: 2;
+  .dropdown-s {
+    z-index: 5;
   }
 
   .dropdown-button {
-    position: static;
+    position: relative;
     z-index: 2;
     display: block;
     width: 300%;
@@ -517,6 +742,10 @@ main {
     background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
     /* glass */
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+  }
+
+  .dropdown-button:hover {
+    cursor: pointer;
   }
 
 }

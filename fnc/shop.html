@@ -23,9 +23,9 @@
         <header class="navbar-s">
 
             <div class="navbar-buttons">
-                <a href="#">Shop</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./contacto.html">Contacto</a>
             </div>
 
 
@@ -35,15 +35,24 @@
                 <img src="../img/hambur.svg" alt="menu hamburguesa">
             </label>
 
-            <div class="dropdown">
-                <button class="dropdown-button">Shop</button>
-                <button class="dropdown-button">Nosotros</button>
-                <button class="dropdown-button">Contacto</button>
+            <div class="dropdown-s">
+                <a href="../fnc/shop.html">
+                    <button class="dropdown-button">Shop</button>
+                </a>
+                <a href="../fnc/Nosotros.html">
+                    <button class="dropdown-button">Nosotros</button>
+                </a>
+                <a href="../fnc/contacto.html">
+                    <button class="dropdown-button">Contacto</button>
+                </a>
             </div>
 
 
-            <img class="logo" src="../img/logo.svg" alt="logo fnc">
-            <img class="logo-bolsa" src="../img/carrito.svg" alt="mi carrito">
+            <img class="logo" src="../img/logo.svg" onclick="location.href=''+location.href.slice(0,-13)+'index.html'"
+                alt="logo fnc">
+            <a class="icono-cart" href="../fnc/cart.html"><img class="logo-bolsa" src="../img/carrito.svg"
+                    alt="mi carrito">
+            </a>
 
 
 
