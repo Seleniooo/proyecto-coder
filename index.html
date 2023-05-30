@@ -16,11 +16,10 @@
 
     <header class="navbar-s">
         <div class="navbar-buttons">
-            <a href="#">Shop</a>
+            <a href="./fnc/shop.html">Shop</a>
             <a href="./fnc/nosotros.html">Nosotros</a>
-            <a href="#">Contacto</a>
+            <a href="./fnc/contacto.html">Contacto</a>
         </div>
-
 
         <input type="checkbox" id="menu-toggle">
 
@@ -28,25 +27,27 @@
             <img src="img/hambur.svg" alt="menu hamburguesa">
         </label>
 
-        <div class="dropdown">
-            <button class="dropdown-button">Shop</button>
-            <a href="./fnc/nosotros.html">
+        <div class="dropdown-s">
+            <a href="./fnc/shop.html">
+                <button class="dropdown-button">Shop</button>
+            </a>
+            <a href="./fnc/Nosotros.html">
                 <button class="dropdown-button">Nosotros</button>
             </a>
-            <button class="dropdown-button">Contacto</button>
+            <a href="./fnc/contacto.html">
+                <button class="dropdown-button">Contacto</button>
+            </a>
         </div>
 
 
-        <img class="logo" src="img/logo.svg" alt="logo fnc">
-        <img class="logo-bolsa" src="img/carrito.svg" alt="mi carrito">
-
-
-
+        <img class="logo" src="img/logo.svg" onclick="window.location.reload()" alt="logo fnc">
+        <a class="icono-cart" href="./fnc/cart.html"><img class="logo-bolsa" src="img/carrito.svg" alt="mi carrito">
+        </a>
     </header>
 
 
 
-    <main>
+    <main class="main-index">
         <div class="main-container">
         </div>
     </main>
