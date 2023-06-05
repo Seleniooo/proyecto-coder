@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FNC :3</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
@@ -14,35 +14,38 @@
 
 <body class="body-index">
 
-    <header class="navbar-s">
-        <div class="navbar-buttons">
-            <a href="./fnc/shop.html">Shop</a>
-            <a href="./fnc/Nosotros.html">Nosotros</a>
-            <a href="./fnc/contacto.html">Contacto</a>
-        </div>
+    <header>
 
-        <input type="checkbox" id="menu-toggle">
+        <nav class="navbar-s">
+            <div class="navbar-buttons">
+                <a href="./fnc/shop.html">Shop</a>
+                <a href="./fnc/Nosotros.html">Nosotros</a>
+                <a href="./fnc/contacto.html">Contacto</a>
+            </div>
 
-        <label for="menu-toggle" class="hamburguesa">
-            <img src="img/hambur.svg" alt="menu hamburguesa">
-        </label>
+            <input type="checkbox" id="menu-toggle">
 
-        <div class="dropdown-s">
-            <a href="./fnc/shop.html">
-                <button class="dropdown-button">Shop</button>
+            <label for="menu-toggle" class="hamburguesa">
+                <img src="img/hambur.svg" alt="menu hamburguesa">
+            </label>
+
+            <div class="dropdown-s">
+                <a href="./fnc/shop.html">
+                    <button class="dropdown-button">Shop</button>
+                </a>
+                <a href="./fnc/Nosotros.html">
+                    <button class="dropdown-button">Nosotros</button>
+                </a>
+                <a href="./fnc/contacto.html">
+                    <button class="dropdown-button">Contacto</button>
+                </a>
+            </div>
+
+
+            <img class="logo" src="img/logo.svg" onclick="window.location.reload()" alt="logo fnc">
+            <a class="icono-cart" href="./fnc/cart.html"><img class="logo-bolsa" src="img/carrito.svg" alt="mi carrito">
             </a>
-            <a href="./fnc/Nosotros.html">
-                <button class="dropdown-button">Nosotros</button>
-            </a>
-            <a href="./fnc/contacto.html">
-                <button class="dropdown-button">Contacto</button>
-            </a>
-        </div>
-
-
-        <img class="logo" src="img/logo.svg" onclick="window.location.reload()" alt="logo fnc">
-        <a class="icono-cart" href="./fnc/cart.html"><img class="logo-bolsa" src="img/carrito.svg" alt="mi carrito">
-        </a>
+        </nav>
     </header>
 
 
@@ -51,15 +54,31 @@
         <div class="main-container">
         </div>
     </main>
+
+
+
+
+
+
+
+
+
     <footer>
         <section class="footer-container">
             <div class="links-footer">
                 <a href="#">Instagram</a>
                 <a href="#">Etsy</a>
                 <a href="#">Whatsapp</a>
+                <p>SITE CREDITS</p>
             </div>
         </section>
     </footer>
+
+
+
+
+
+
 </body>
 
 </html>
