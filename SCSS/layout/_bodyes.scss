@@ -1,0 +1,62 @@
+.body-index {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+
+
+}
+
+.body-shop {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
+    min-height: 100vh;
+    /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
+    background-image: url(../img/fondo-shop.svg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.body-nos {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
+    min-height: 100vh;
+    /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
+    background-image: url(../img/fondo-nosotros.svg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.body-contacto {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
+    min-height: 100vh;
+    /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
+    background-image: url(../img/fondo-contacto.svg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.body-carrito {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
+    min-height: 100vh;
+    /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
+    background-image: url(../img/fondo-nosotros.svg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.body-detalles {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Divide el espacio vertical en 3 filas: navbar, contenido principal y footer */
+    min-height: 100vh;
+    /* Establece el tamaño mínimo del cuerpo para ocupar al menos el 100% del viewport vertical */
+    background-image: url(../img/fondo-detalles.svg);
+    background-position: center top;
+    background-size: cover;
+}

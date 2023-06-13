@@ -1,0 +1,205 @@
+@media only screen and (max-width: 760px) {
+    .background {
+        height: 1807px;
+        padding: 10px;
+    }
+
+    .navbar-s {
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 9.66%;
+        padding-right: 9.66%;
+        height: 89px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+
+        .navbar-buttons-s {
+            display: none;
+        }
+
+        .hamburguesa {
+            display: block;
+            left: 11.94%;
+            right: 80.28%;
+
+        }
+
+        .dropdown-s {
+            z-index: 5;
+            position: fixed;
+            margin-top: 90px;
+            margin-left: 0px;
+            justify-content: center;
+            background-color: #ffffff9c;
+            border: 1px solid #0d02af00;
+
+            width: 100%;
+
+            .dropdown-button-1 {
+
+                position: fixed;
+                z-index: 2;
+                display: block;
+                width: 100%;
+                height: 3rem;
+                top: 90px;
+                left: 0%;
+                text-align: center;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                font-family: 'Exo', sans-serif;
+                font-style: italic;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 32px;
+                color: #000;
+                border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
+                background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
+                /* glass */
+                box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+                backdrop-filter: blur(20px);
+                mix-blend-mode: overlay;
+            }
+
+            .dropdown-button-2 {
+
+                position: fixed;
+                z-index: 2;
+                display: block;
+                width: 100%;
+                height: 3rem;
+                top: 8.62rem;
+                left: 0%;
+                text-align: center;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                font-family: 'Exo', sans-serif;
+                font-style: italic;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 32px;
+                color: #000;
+                border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
+                background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
+                /* glass */
+                box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+                backdrop-filter: blur(20px);
+                mix-blend-mode: overlay;
+            }
+
+            .dropdown-button-3 {
+
+                position: fixed;
+                z-index: 2;
+                display: block;
+                width: 100%;
+                height: 3rem;
+                top: 11.62rem;
+                left: 0%;
+                text-align: center;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                font-family: 'Exo', sans-serif;
+                font-style: italic;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 32px;
+                color: #000;
+                border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
+                background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
+                /* glass */
+                box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+                backdrop-filter: blur(20px);
+                mix-blend-mode: overlay;
+            }
+
+            .dropdown-button:hover {
+                cursor: pointer;
+            }
+        }
+
+        #menu-toggle:checked~.dropdown-s {
+            display: block;
+
+
+        }
+
+        .main-index {
+            .main-container {
+
+                background-repeat: no-repeat;
+                margin-left: 10%;
+                margin-top: 60%;
+
+            }
+        }
+
+        .logo-bolsa {
+            width: 31px;
+            height: 31px;
+        }
+
+
+
+        .logo {
+            justify-content: center;
+            width: 80px;
+            height: 42px;
+        }
+    }
+
+
+
+
+
+    /*   .img-logo-fnc {
+        z-index: 1;
+    } */
+
+
+
+
+    .nube-1 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 30%;
+        top: 7%;
+        background-image: url(../../img/productos/nube-1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+    .nube-2 {
+        /* display: flex;
+        flex-wrap: wrap; */
+        height: 260px;
+        width: 260px;
+
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        background-image: url(../../img/productos/nube-2.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .nube-3 {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        background-image: url(../../img/productos/nube-3.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+}
