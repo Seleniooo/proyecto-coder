@@ -53,23 +53,60 @@
 
     </header>
 
-    <main class="main-contactos">
-        <div class="contactos-container">
-            <div class="consulta-container">
-                <h3 class="title-consulta">¿ALGUNA CONSULTA?</h3>
-                <p class="texto-consulta">
-                    segundo renglón hhLorem ipsum dolor sit amet consectetur. Sem adipiscing aliquet vel nascetur
-                    ullamcorper ultrices ultrices sit. Dui tortor non amet tellus neque.
-                </p>
-                <div class="button-consulta">
-                    <a class="link-consulta" href="#footer">
-                        <span> CONTACTANOS </span>
-                    </a>
+    <main class="main-contacto">
+
+        <section class="card-contacto">
+
+            <form action="formulario.php" method="get">
+
+                <div class="form-arriba">
+                    <div class=nombre-f>
+                        <label for="Nombre">Nombre</label>
+                        <input class="nombre-i" type="text" name="Nombre">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input class="email-i" type="email" id="email" name="email" required>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div class="mensajes-contacto">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Contáctanos</button>
+                </div>
+            </form>
+        </section>
+
+
+
 
     </main>
+
+    <!--  <form>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Contáctanos</button>
+        </div>
+    </form>
+ -->
+
+
     <footer id="footer">
         <section class="footer-container">
             <div class="links-footer">

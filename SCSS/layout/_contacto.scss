@@ -1,0 +1,149 @@
+/* .form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+.main-contacto {
+    display: flex;
+    justify-content: center;
+
+
+    .card-contacto {
+        position: fixed;
+        display: flex;
+        padding: 3rem;
+        width: 76vw;
+        min-width: 350px;
+        background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%);
+        /* glass */
+
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(20px);
+        margin-top: 10%;
+        justify-content: center;
+
+        form {
+            width: 76vw;
+            min-width: 350px;
+
+
+
+            .form-arriba {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 2rem;
+                padding: 2rem;
+
+                .nombre-f {
+
+                    .nombre-i {
+                        background: rgba(255, 255, 255, 0.4);
+                        border-radius: 12px;
+                        border: 2px solid;
+
+
+                    }
+
+                    label {
+                        display: flex;
+                    }
+
+
+                }
+
+                .email-i {
+                    background: rgba(255, 255, 255, 0.4);
+                    border-radius: 12px;
+                    border: 2px solid;
+
+
+                }
+
+                label {
+                    display: flex;
+                }
+
+            }
+
+            .mensajes-contacto {
+                display: flex;
+                flex-direction: column;
+
+
+
+                textarea {
+
+
+
+                    width: 100%;
+                    background: rgba(255, 255, 255, 0.4);
+                    border-radius: 12px;
+                    border: 2px solid;
+
+
+
+                }
+
+                label {
+
+                    display: flex;
+                    color: #6837E3;
+                }
+
+            }
+
+            .form-group {
+                button {
+                    display: flex;
+                    margin: 2rem;
+                    align-self: center;
+                    justify-self: center;
+                    justify-content: center;
+                    width: 15vw;
+                    height: 4vw;
+                    min-width: 129px;
+                    min-height: 30px;
+                    border-radius: 25px;
+                    background: linear-gradient(104.73deg, rgba(96, 40, 255, 0.8) 16.35%, rgba(255, 40, 92, 0.408) 107.34%);
+                    font-family: 'Exo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    /* identical to box height, or 100% */
+
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 4.54469px;
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+
+    }
+}
