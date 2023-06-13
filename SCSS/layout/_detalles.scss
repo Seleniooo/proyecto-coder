@@ -1,0 +1,83 @@
+.body-detalles {
+
+
+
+
+    .detalles-container {
+        display: flex;
+        margin-left: 30%;
+        margin-top: 10%;
+        position: fixed;
+
+        .detalles-card {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 317px;
+            width: 497px;
+            background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%);
+            padding: 1.5rem;
+            box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+            backdrop-filter: blur(20px);
+            border-radius: 8px 0px 0px 8px;
+
+
+            h1 {
+                color: red;
+            }
+
+            .detalles-texto {}
+
+            .detalles-medidas {}
+
+            .detalles-precio {}
+
+            .caja-modelo {
+                display: flex;
+                border: 1px solid #6837E3;
+                border-radius: 25px;
+                justify-content: center;
+                justify-items: center;
+                width: 376px;
+                height: 50px;
+                align-items: center;
+
+                p {
+                    font-family: 'Exo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 16px;
+                    /* identical to box height, or 100% */
+
+                    text-align: center;
+                    letter-spacing: 4.54469px;
+                    color: white;
+                }
+
+                .flecha-icono {}
+            }
+
+            .boton-agregar {
+                .link-agregar {
+                    background: linear-gradient(104.73deg, rgba(96, 40, 255, 0.8) 16.35%, rgba(255, 40, 92, 0.408) 107.34%);
+                    border-radius: 25px;
+                    height: 50px;
+                    width: 376px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Exo', sans-serif;
+                    color: white;
+                    letter-spacing: 4.54469px;
+
+                    scroll-behavior: smooth;
+                }
+            }
+        }
+
+        .detalles-fotos {}
+    }
+}

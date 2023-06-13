@@ -1,0 +1,81 @@
+.navbar-s {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9.66%;
+    padding-right: 9.66%;
+    height: 89px;
+    align-items: center;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
+    background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
+    /* glass */
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(20px);
+    mix-blend-mode: overlay;
+    background-image: url(../img/noise-navbar.svg);
+
+    .navbar-buttons-s {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        font-family: 'Exo', sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: none;
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .dropdown-s {
+        display: none;
+
+
+
+
+        .dropdown-button-1 {
+            display: none;
+            position: fixed;
+        }
+
+        .dropdown-button-2 {
+            display: none;
+            position: fixed;
+        }
+
+        .dropdown-button-3 {
+            display: none;
+            position: fixed;
+        }
+    }
+
+    .logo {
+        max-width: 50%;
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .icono-cart {
+        .logo-bolsa {
+            max-width: 100%;
+            max-height: 100%;
+            color: #000000;
+        }
+    }
+}
