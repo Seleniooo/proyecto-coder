@@ -64,7 +64,7 @@
 
                         .card {
                             z-index: -3;
-                            background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%) !important;
+                            background: $glass-background !important;
                             border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%) !important;
                             box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12) !important;
                             backdrop-filter: blur(20px) !important;

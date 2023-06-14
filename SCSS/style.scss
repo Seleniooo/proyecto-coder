@@ -1,10 +1,14 @@
+//variables y mixins
+@import "./utilities/mixins-variables";
+//base
+@import "./base/reset";
 //imports
 @import "./layout/index";
-@import "./base/reset";
+//layouts
 @import "./layout/header";
 @import "./layout/bodyes";
 @import "./layout/footer";
-@import "./layout/shop";
+@import "./layout/_shop";
 @import "./layout/nosotros";
 @import "./layout/carrito";
 @import "./layout/detalles";
@@ -17,9 +21,13 @@
 
 
 
-$glass-background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%);
-$box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
-$backdrop-filter: blur(20px);
+
+
+
+
+
+
+
 
 
 
@@ -34,47 +42,13 @@ main {
 
 
 
-//index
-
-
-
-//footer
 
 
 
 
-
-
-
-//SHOP
-
-
-
-
-//NOSOTROS
-
-
-
-//CONTACTO
-
-
-
-
-
-//CARRITO
-
-
-
-
-
-//detalles 
-
-
-
-
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
     .container-cards {
         margin-left: 10vw;
         margin-right: 10vw;
     }
-}
+} */
