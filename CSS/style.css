@@ -33,7 +33,7 @@ body a :hover :active :focus {
   width: 27.375vw;
   margin-left: 3%;
   margin-top: 10%;
-  background-image: url(../../img/fnc.svg);
+  background-image: url(../img/fnc.svg);
   background-size: contain;
 }
 
