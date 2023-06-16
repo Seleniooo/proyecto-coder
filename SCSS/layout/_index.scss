@@ -11,6 +11,7 @@
       background-repeat: no-repeat;
 
 
+
   }
 
 
@@ -36,24 +37,26 @@
       height: 329px;
       left: 22%;
       top: 5%;
-      background-image: url(../../img/productos/nube-1.svg);
+      background-image: url(../img/productos/nube-1.svg);
       background-size: contain;
       background-repeat: no-repeat;
+
   }
 
 
-  /*  .nube-2 {
+  .nube-2 {
       height: 298px;
       width: 354px;
 
       position: absolute;
       top: 3%;
       left: 45%;
-      background-image: url(../../img/productos/nube-2.svg);
+      background-image: url(../img/productos/nube-2.svg);
       background-size: cover;
       background-repeat: no-repeat;
 
-  } */
+
+  }
 
   .nube-3 {
       height: 21.375vw;
@@ -61,26 +64,27 @@
       position: absolute;
       right: 3%;
       top: 9%;
-      background-image: url(../../img/productos/nube-3.svg);
+      background-image: url(../img/productos/nube-3.svg);
       background-size: contain;
       background-repeat: no-repeat;
+
   }
 
 
   .nube-1:hover {
-      background-image: url(../../img/productos/nube-1-hover.svg);
+      background-image: url(../img/productos/nube-1-hover.svg);
       transition: all 0.5s;
 
   }
 
   .nube-2:hover {
-      background-image: url(../../img/productos/nube-2-hover.svg);
+      background-image: url(../img/productos/nube-2-hover.svg);
       /* transform: translate(1px); */
       transition: all 0.5s;
 
   }
 
   .nube-3:hover {
-      background-image: url(../../img/productos/nube-3-hover.svg);
+      background-image: url(../img/productos/nube-3-hover.svg);
       transition: all 0.5s;
   }
