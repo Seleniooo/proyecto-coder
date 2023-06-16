@@ -43,47 +43,46 @@ body a :hover :active :focus {
   height: 329px;
   left: 22%;
   top: 5%;
-  background-image: url(../../img/productos/nube-1.svg);
+  background-image: url(../img/productos/nube-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-/*  .nube-2 {
-    height: 298px;
-    width: 354px;
+.nube-2 {
+  height: 298px;
+  width: 354px;
+  position: absolute;
+  top: 3%;
+  left: 45%;
+  background-image: url(../img/productos/nube-2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-    position: absolute;
-    top: 3%;
-    left: 45%;
-    background-image: url(../../img/productos/nube-2.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-} */
 .nube-3 {
   height: 21.375vw;
   width: 22.375vw;
   position: absolute;
   right: 3%;
   top: 9%;
-  background-image: url(../../img/productos/nube-3.svg);
+  background-image: url(../img/productos/nube-3.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .nube-1:hover {
-  background-image: url(../../img/productos/nube-1-hover.svg);
+  background-image: url(../img/productos/nube-1-hover.svg);
   transition: all 0.5s;
 }
 
 .nube-2:hover {
-  background-image: url(../../img/productos/nube-2-hover.svg);
+  background-image: url(../img/productos/nube-2-hover.svg);
   /* transform: translate(1px); */
   transition: all 0.5s;
 }
 
 .nube-3:hover {
-  background-image: url(../../img/productos/nube-3-hover.svg);
+  background-image: url(../img/productos/nube-3-hover.svg);
   transition: all 0.5s;
 }
 
@@ -792,7 +791,7 @@ button {
     height: 194px;
     left: 5%;
     top: 6%;
-    background-image: url(../../img/productos/nube-1.svg);
+    background-image: url(../img/productos/nube-1.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -802,7 +801,7 @@ button {
     position: absolute;
     top: 2%;
     left: 35%;
-    background-image: url(../../img/productos/nube-2.svg);
+    background-image: url(../img/productos/nube-2.svg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -812,7 +811,7 @@ button {
     position: absolute;
     right: 5%;
     top: 10%;
-    background-image: url(../../img/productos/nube-3.svg);
+    background-image: url(../img/productos/nube-3.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -949,7 +948,7 @@ button {
     height: 259px;
     left: 4%;
     top: 5%;
-    background-image: url(../../img/productos/nube-1.svg);
+    background-image: url(../img/productos/nube-1.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -961,7 +960,7 @@ button {
     position: absolute;
     top: 3%;
     left: 40%;
-    background-image: url(../../img/productos/nube-2.svg);
+    background-image: url(../img/productos/nube-2.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -971,7 +970,7 @@ button {
     position: absolute;
     right: 8%;
     top: 7%;
-    background-image: url(../../img/productos/nube-3.svg);
+    background-image: url(../img/productos/nube-3.svg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1146,7 +1145,7 @@ button {
     height: 328px;
     left: 10%;
     top: 6%;
-    background-image: url(../../img/productos/nube-1.svg);
+    background-image: url(../img/productos/nube-1.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1160,7 +1159,7 @@ button {
     position: absolute;
     top: 3%;
     left: 40%;
-    background-image: url(../../img/productos/nube-2.svg);
+    background-image: url(../img/productos/nube-2.svg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1170,7 +1169,7 @@ button {
     position: absolute;
     right: 5%;
     top: 10%;
-    background-image: url(../../img/productos/nube-3.svg);
+    background-image: url(../img/productos/nube-3.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1189,7 +1188,7 @@ button {
     height: 25.1vw;
     left: 22%;
     top: 6%;
-    background-image: url(../../img/productos/nube-1.svg);
+    background-image: url(../img/productos/nube-1.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1199,7 +1198,7 @@ button {
     position: absolute;
     top: 3%;
     left: 50%;
-    background-image: url(../../img/productos/nube-2.svg);
+    background-image: url(../img/productos/nube-2.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1209,7 +1208,7 @@ button {
     position: absolute;
     right: 3%;
     top: 9%;
-    background-image: url(../../img/productos/nube-3.svg);
+    background-image: url(../img/productos/nube-3.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
