@@ -1,0 +1,753 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Calistoga&family=Cantarell:wght@400;700&family=Inter:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ */
+:root {
+    --azul: #1C2D46;
+    --celeste: #45ACB4;
+    --ladrillo: #EA5534;
+    --amarillo: #EDDA6A;
+    --blanco: #FFFFFF;
+    --fondoForm: rgba(255, 255, 255, 0.4);
+    --violeta: rgba(96, 40, 255, 0.80);
+    --rosa: #CB37E3;
+    /* --gra: #6028FF, #FF285C; */
+    --gra: linear-gradient(176deg, rgba(96, 40, 255, 0.80) 0%, rgba(255, 40, 92, 0.41) 100%);
+
+
+}
+
+.contenedor-main {
+    justify-content: center;
+    position: fixed;
+}
+
+.row {
+
+    justify-content: center;
+
+}
+
+
+
+/* Modal carrito*/
+.modalColor {
+    border: none;
+    box-shadow: 0px 1px 7px #45ACB4;
+}
+
+.botonEliminar {
+    border: none;
+    background-color: white;
+    position: absolute;
+    margin-left: 384px;
+
+
+}
+
+.botonCarrito {
+    background: none;
+    border: none;
+}
+
+.numeroCarrito {
+    color: white;
+    padding: 5px;
+    background-color: var(--ladrillo);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50px;
+    top: 10%;
+    /* right: -12px; */
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modalContainer {
+    --bs-modal-zindex: 1055;
+    --bs-modal-width: 450px;
+    --bs-modal-padding: 1rem;
+    --bs-modal-margin: 0.5rem;
+    --bs-modal-color: ;
+    --bs-modal-bg: #fff;
+    --bs-modal-border-color: var(--bs-border-color-translucent);
+    --bs-modal-border-width: 1px;
+    --bs-modal-border-radius: 0.5rem;
+    --bs-modal-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --bs-modal-inner-border-radius: calc(0.5rem - 1px);
+    --bs-modal-header-padding-x: 1rem;
+    --bs-modal-header-padding-y: 1rem;
+    --bs-modal-header-padding: 1rem 1rem;
+    --bs-modal-header-border-width: 1px;
+    --bs-modal-title-line-height: 1.5;
+    --bs-modal-footer-gap: 0.5rem;
+    --bs-modal-footer-bg: ;
+    --bs-modal-footer-border-width: 1px;
+    position: fixed;
+    top: 0;
+    left: 455px;
+    z-index: var(--bs-modal-zindex);
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+
+}
+
+.modalTextoCarrito {
+    border-bottom: 1.5px dashed var(--celeste);
+
+}
+
+/* .img1 {
+    position: absolute;
+    width: 77px;
+    margin-bottom: 30px;
+    margin-left: -175px;
+
+} */
+
+.cardCarrito {
+    background-color: #B5DCDA;
+}
+
+.titleCards {
+    position: relative;
+    margin-left: 77px;
+    padding-bottom: 20px;
+
+}
+
+/* .sectionProd {
+    position: initial;
+
+} */
+
+.carritoContainer {
+    margin-top: 10px;
+    border-bottom: 1.5px dashed var(--celeste);
+}
+
+.imgCarrito {
+    position: absolute;
+    width: 50px;
+    margin-bottom: 30px;
+    margin-left: -14px;
+}
+
+.catCant {
+    display: none;
+    /* margin-left: -5px;
+    border-radius: 15px;
+    width: 90px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color: var(--celeste);
+    background-color: transparent;
+    border: 1px solid var(--celeste);
+    margin-top: 3px;
+ */
+}
+
+
+
+/* @-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+ */
+
+
+/*seccion nuestros productos*/
+/* .productosTitle {
+    margin-top: 50px;
+    width: 600px;
+    margin-left: 140px;
+
+} */
+
+
+
+/* LA PARTE DE ARRIBA DE LOS BOTONES, BOWLS, ETC */
+.selectStyles {
+    justify-content: center;
+    margin-top: 140px;
+
+}
+
+
+.selectText {
+    padding-right: 15px;
+    color: var(--violeta);
+    cursor: pointer;
+}
+
+.selectText:hover {
+    color: var(--ladrillo);
+    text-decoration-line: overline;
+    text-decoration: underline;
+
+}
+
+/* .cambiaColor {
+    color: green;
+} */
+
+.divProductos {
+    /* display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 400px);
+    justify-content: center;
+    margin-bottom: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cardStyles {
+    /* margin-top: 50px;
+    margin-right: 50px;
+    width: 100%; */
+    width: 260px;
+    height: 380px;
+    background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%) !important;
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%) !important;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12) !important;
+    backdrop-filter: blur(20px) !important;
+    border-radius: 8px !important;
+    padding: 20px;
+    margin-right: 2vw;
+
+
+}
+
+.cardImg {
+    width: 210px;
+    height: 195px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+.infoCard {
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+    margin-left: 25px;
+
+
+}
+
+.textCard {
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 50px;
+    /* display: block; */
+    margin-top: 5px;
+
+    margin-bottom: 10px;
+}
+
+.botonInfo {
+    text-decoration: none;
+
+}
+
+
+/* BOTON AGREGAR O VARIOS */
+.botonHeader {
+
+    border-radius: 25px;
+    background: var(--violeta);
+
+    color: var(--blanco);
+    border: none;
+    width: 190px;
+    height: 45px;
+    left: calc(50% - 190px/2);
+    top: 20px;
+}
+
+/* MAS ESOECIFICAMENTE EL AGREGAR */
+.botonProductos1 {
+
+    padding-right: 80px;
+    padding-left: 20px;
+    width: 120px;
+    margin-right: 20px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 13px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.botonProductos1:hover {
+    color: var(--blanco);
+    background-color: var(--rosa);
+
+}
+
+/* .botonProductos2 {
+
+    width: 120px;
+    padding-right: 20px;
+
+    background-color: var(--celeste);
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 13px;
+    font-weight: 500;
+    transition: .5s;
+} */
+
+.frame-container {
+    height: 440px;
+    width: 100vw;
+    /* justify-content: center; */
+    padding: 10px;
+    /* Espacio interno del marco */
+    overflow: hidden;
+    /* Oculta el scroll del marco */
+    margin-top: 10px;
+    /* position: fixed; */
+    justify-content: center;
+}
+
+
+
+.card-scroll-container {
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.card-scroll-container::-webkit-scrollbar {
+    width: 16px;
+}
+
+.card-scroll-container::-webkit-scrollbar-track {
+    background: linear-gradient(163.82deg, rgba(189, 174, 197, 0.3) 1.33%, rgba(195, 88, 245, 0.164) 95.23%) !important;
+    border-radius: 100px;
+}
+
+.card-scroll-container::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+    border-radius: 100px;
+}
+
+/* 
+.botonProductos2:hover {
+    background-color: var(--blanco);
+    border: 1px solid var(--azul);
+} */
+
+/* .iconoWhatapps {
+    position: absolute;
+    margin-left: 76px;
+    margin-bottom: 20px;
+
+    color: white;
+    width: 20px;
+} */
+
+/* a.botonInfo {
+    color: #1C2D46;
+    align-self: center;
+    font-weight: 500;
+}
+ */
+
+/*Modal Productos, LOS DETALLES CUANDO ENTRAS AL PRODCUTP*/
+.modal {
+    --bs-modal-width: 820px;
+}
+
+
+.modal-backdrop.show {
+    z-index: -12 !important;
+}
+
+.imgModal {
+    width: 345px;
+    height: 330px;
+    border-radius: 15px;
+    border-color: var(--celeste);
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: -12px;
+    margin-right: 50px;
+    border: 1.5px solid var(--celeste);
+
+}
+
+.imgModalDetail {
+    width: 83px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.50s ease-in-out;
+}
+
+.imgModalDetail:hover {
+    transform: scale(1.2);
+    position: absolute;
+    border: 1px solid var(--celeste);
+    border-radius: 5px;
+}
+
+.textModalProducto {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 253px;
+    margin-top: 5px;
+    color: rgba(255, 40, 92, 0.58);
+    text-align: center;
+    font-size: 24px;
+    font-family: Fira Sans Condensed;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101.9%;
+    letter-spacing: 2.4px;
+
+}
+
+/* .el_carrito { */
+/* display: none; */
+/*    height: 50px;
+    width: 50px;
+} */
+
+
+/* ADULTOS NIÑOS SERIG */
+.buttonCategoria {
+    margin-top: 22px;
+    margin-left: 50px;
+}
+
+.modalCategoria {
+    border-radius: 15px;
+    width: fit-content;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    border-color: var(--celeste);
+    background-color: transparent;
+    border: 1px solid var(--celeste);
+    cursor: none;
+}
+
+.textDescriptionModal {
+    font-size: 20px;
+    margin-left: 248px;
+    margin-right: 36px;
+    margin-top: 17px;
+    height: 174px;
+    display: block;
+    text-align: left;
+}
+
+/* .caracteristicaColor {
+    margin-left: 20px;
+} */
+
+.colorModal1 {
+    width: 25px;
+    background-color: #EA5534;
+    border-radius: 50%;
+
+    color: transparent;
+    border: transparent;
+}
+
+.colorModal2 {
+    width: 25px;
+    background-color: #1C2D46;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: transparent;
+    border: transparent;
+}
+
+.colorModal3 {
+    width: 25px;
+    background-color: var(--celeste);
+    border-radius: 50%;
+    margin-left: 5px;
+    color: transparent;
+    border: transparent;
+}
+
+.botonesDetalleModal {
+    position: absolute;
+    margin-left: 247px;
+    margin-top: 70px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.botonDetalle1 {
+    width: 119px;
+    height: 33px;
+    margin-right: 15px;
+    border-radius: 15px;
+}
+
+.botonDetalle1:hover {
+    background-color: var(--rosa);
+}
+
+.botonDetalle2 {
+    width: 119px;
+    height: 33px;
+    margin-right: 15px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    color: #1C2D46;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 1px solid var(--rosa);
+}
+
+.botonDetalle2:hover {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.closeModal {
+
+    display: none;
+
+}
+
+
+
+/*Resposive*/
+
+@media only screen and (max-width: 992px) {
+
+
+    .divProductos {
+        /*  display: grid !important; */
+        grid-template-columns: repeat(2, 300px) !important;
+        grid-template-rows: repeat(6, 400px) !important;
+        justify-content: center !important;
+        margin-bottom: 50px !important;
+    }
+
+    .productosTitle {
+        width: 500px !important;
+        margin-left: 120px !important;
+    }
+
+    /* .carousel {
+        height: 450px !important;
+    } */
+
+    .modalContainer {
+        left: 30px !important;
+    }
+
+
+
+    @media only screen and (max-width: 850px) {
+
+
+        .modalContainer {
+            left: 30px !important;
+        }
+    }
+
+
+
+    /* 
+    .box-level-one {
+        gap: 0px !important;
+        justify-content: space-between !important;
+        width: 95% !important;
+    }
+
+    .box-son-level-two {
+        width: 95% !important;
+    } */
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .selectStyles {
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+    }
+
+    .botonProductos2 {
+        width: 250px !important;
+        margin-bottom: 10px !important;
+        padding-left: 10px !important;
+        border-color: var(--celeste) !important;
+        position: absolute !important;
+        margin-top: 316px !important;
+        margin-left: -30px !important;
+    }
+
+    .botonProductos1 {
+        width: 250px !important;
+        margin-right: 0px !important;
+        padding-left: 80px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .imgModal {
+        width: 345px !important;
+        margin-left: 185px !important;
+        position: absolute !important;
+        margin-top: -340px !important;
+    }
+
+    .textModalProducto {
+        justify-content: flex-start !important;
+        margin-left: 37px !important;
+        margin-top: 0px !important;
+    }
+
+    .textDescriptionModal {
+        margin-left: 22px !important;
+        margin-top: 10px !important;
+        margin-bottom: 25px !important;
+    }
+
+    /* .caracteristicaColor {
+        margin-left: -173px !important;
+    } */
+
+    .botonesDetalleModal {
+        margin-top: -50px !important;
+        margin-left: 325px !important;
+        position: absolute;
+
+    }
+
+    .buttonCategoria {
+        margin-left: -150px !important;
+    }
+
+    .imgModalDetail {
+        position: relative !important;
+        margin-left: 30px !important;
+        margin-right: 0px;
+    }
+
+
+    .modalContainer {
+        left: -5px !important;
+    }
+
+    .botonEliminar {
+        margin-left: 289px !important;
+    }
+
+    .modalCategoria {
+        font-size: smaller !important;
+        width: 77px !important;
+    }
+
+    .buscadorContainer {
+        margin-top: 40px !important;
+    }
+
+    .cardStyles {
+        margin-right: 0px;
+    }
+
+    @media only screen and (max-width: 576px) {
+
+        @media only screen and (max-width: 450px) {
+
+
+            .imgModal {
+                width: 320px !important;
+            }
+
+            /*  .caracteristicaColor {
+                margin-left: -88px !important;
+                margin-top: 0px !important;
+            } */
+
+            .buttonCategoria {
+                margin-left: -70px !important;
+                margin-bottom: 41px !important;
+
+            }
+
+            .botonesDetalleModal {
+                margin-top: -23px !important;
+                margin-left: 60px !important;
+            }
+
+            .textBuscador {
+                padding-right: 25px !important;
+            }
+
+            .botonBuscador {
+                margin-left: 50px !important;
+                cursor: pointer !important;
+            }
+
+            .buscadorContainer {
+                margin-top: 38px !important;
+                margin-left: 28px !important;
+            }
+
+            .img1 {
+                margin-left: -130px !important;
+            }
+        }
+    }
+}
