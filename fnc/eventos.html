@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Fira+Sans+Condensed:wght@600&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body class="body-detalles">
@@ -53,33 +55,32 @@
     </header>
 
     <main class="main-detalles">
-        <section class="detalles-container">
-            <div class="detalles-card">
-                <h1>Florero perrito</h1>
-                <p class="detalle-texto">Florero de ceramica, hecho a mano</p>
-                <p class="detalles-medidas">15 cm x 15 cm</p>
-                <span class="detalles-precio">$600</span>
-                <div class="caja-modelo">
-                    <p>Elegir modelo</p>
-                    <img class="flecha-icono" src="#" alt="">
+        <section class="eventos">
+            <div id="carouselExampleAutoplaying" class="carousel slide eventos-style" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/folletos/evento1.svg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/folletos/evento1.svg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/folletos/evento1.svg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <div class="boton-agregar">
-                    <a class="link-agregar" href="#footer">
-                        <span> AGREGAR </span>
-                        <img class="icono-carrito" src="#" alt="">
-                    </a>
-                </div>
-
-
-
-            </div>
-            <div class="detalles-fotos">
-                <img class="fotos-d" src="../img/productos/foto2.svg" alt="">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
         </section>
-
-
     </main>
     <footer id="footer">
         <section class="footer-container">
@@ -90,6 +91,9 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
