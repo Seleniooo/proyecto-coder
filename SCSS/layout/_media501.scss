@@ -3,15 +3,19 @@
 
 
 
+    .nos-container {
 
+        .nos-card {
 
+            width: 50.57vw;
 
+        }
 
+    }
 
-
-
-
-
+    .w-100 {
+        width: 90% !important;
+    }
 
 
     .navbar-s {
@@ -66,7 +70,7 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 32px;
-                color: #000;
+                color: rgba(96, 40, 255, 0.80);
                 /* border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
                 background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
               
@@ -92,7 +96,7 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 32px;
-                color: #000;
+                color: rgba(96, 40, 255, 0.80);
                 /* border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
                 background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
             
@@ -118,7 +122,7 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 32px;
-                color: #000;
+                color: rgba(96, 40, 255, 0.80);
                 /*   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
                 background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
                 
@@ -144,7 +148,7 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 32px;
-                color: #000;
+                color: rgba(96, 40, 255, 0.80);
                 /* border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
                 background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
                 
@@ -153,8 +157,15 @@
                 mix-blend-mode: overlay; */
             }
 
-            .dropdown-button:hover {
+            .dropdown-button-1:hover,
+            .dropdown-button-2:hover,
+            .dropdown-button-3:hover,
+            .dropdown-button-4:hover {
                 cursor: pointer;
+                background: rgb(151, 119, 238);
+                color: white;
+
+
             }
         }
 
@@ -184,6 +195,24 @@
 
 
 
+
+    footer {
+
+        .footer-container {
+
+            p {
+                left: 85%;
+            }
+
+            .links-footer-desktop {
+                display: none !important;
+            }
+
+            .links-footer-mobile {
+                display: flex !important;
+            }
+        }
+    }
 
 
 
@@ -292,10 +321,14 @@
 
 
 
+    .frame-container {
+        height: 617px;
+    }
 
 
-
-
+    .numeroCarrito {
+        margin-left: 32px;
+    }
 
 
 

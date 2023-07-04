@@ -2,37 +2,50 @@
 
 
     .contenido-body {
-        .nos-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-top: 15vh;
-            margin-left: 20%;
-            position: fixed;
+        main {
 
-            .nos-card {
-                display: flex;
-                flex-wrap: wrap;
-                flex-flow: wrap;
-                z-index: 0;
-                padding: 2vw;
 
-                height: fit-content;
-                width: 60.57vw;
-                min-width: min-content;
-                border-radius: 8px;
-                background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%);
-                /* glass */
-                box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
-                backdrop-filter: blur(20px);
-                /* Note: backdrop-filter has minimal browser support */
-                border-radius: 8px;
+            .nos-fixed {
 
-                .nos {
-                    .nos-text {
-                        padding: 2em;
-                        font-family: 'Almarai', sans-serif;
+
+                .nos-container {
+                    display: flex;
+                    margin-top: 15vh;
+                    justify-content: center;
+                    /* flex-wrap: wrap;
+                
+                align-items: center;
+                 */
+
+                    /* margin-left: 20%; */
+                    /*   */
+
+
+                    .nos-card {
+
+
+                        z-index: 0;
+                        padding: 2vw;
+
+
+                        height: fit-content;
+                        width: 57.57vw;
+                        min-width: min-content;
+                        border-radius: 8px;
+                        background: linear-gradient(163.82deg, rgba(251, 243, 255, 0.3) 1.33%, rgba(195, 88, 245, 0) 95.23%);
+                        /* glass */
+                        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
+                        backdrop-filter: blur(20px);
+                        /* Note: backdrop-filter has minimal browser support */
+                        border-radius: 8px;
+                        position: fixed;
+
+                        .nos {
+                            .nos-text {
+                                padding: 2em;
+                                font-family: 'Almarai', sans-serif;
+                            }
+                        }
                     }
                 }
             }

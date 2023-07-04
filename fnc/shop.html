@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="emprendimiento, joven, apasionado, Argentina, sublimación, vinilos, DFT, serigrafía, productos, servicios, calidad, personalizar, prendas, objetos, promocionales, equipo experto, técnicas innovadoras, tecnología de vanguardia, resultados excepcionales, duraderos, diseños personalizados, etiquetas adhesivas, impresiones en gran formato, soluciones creativas, personalizadas, versatilidad, contacto, proyecto, siguiente nivel">
-    <meta name="description"
-        content="Descubre un emprendimiento argentino dedicado a la sublimación, vinilos, DFT y serigrafía. Con pasión por el arte y la personalización, ofrecemos soluciones creativas y de alta calidad para tus necesidades de impresión. Explora nuestro sitio web y encuentra la solución perfecta para expresar tu estilo y destacarte en cualquier proyecto personal o comercial.">
-    <title>LKS Studio - Inicio</title>
+
+    <title>FNC- Shop</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/shop.css">
     <link rel="stylesheet" href="../CSS/style.css">
+    <meta name="description" content="Tienda online de feliz no cumple, contactate para completar el pedido">
+    <meta name="keywords" content="feliz no cumple, ceramica, como comprar, shop, compras">
 </head>
 
 
@@ -24,17 +23,17 @@
         <div class="modal-dialog">
             <div class="modal-content modalColor">
                 <div class="modal-header modalTextoCarrito">
-                    <h5 class="modal-title modalTitulo" id="modalTitle">CARRITO DE PRESUPUESTO</h5>
+                    <h5 class="modal-title modalTitulo" id="modalTitle"> BOLSA DE COMPRAS</h5>
 
                 </div>
                 <div class="modal-body">
-                    <div id="textoCarrito" class="text-start">sin productos</div>
+                    <div id="textoCarrito" class="text-start">Sin productos</div>
                     <div id="contenedorCarrito">
 
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="text-center botonHeader" id="mandarCarrito">Pedir presupuesto</button>
+                    <button class="text-center botonHeader" id="mandarCarrito">Consultar</button>
                 </div>
             </div>
         </div>
@@ -44,14 +43,15 @@
 <body class="body-shop">
 
 
-    <!--Ventana modal del carrito (Ricardo)-->
+    <!--Ventana modal del carrito-->
 
 
     <nav class="navbar-s">
         <div class="navbar-buttons-s">
-            <a href="../fnc/shop.html">Shop</a>
+            <a id="boton-shop1" href="../fnc/shop.html">Shop</a>
             <a href="../fnc/Nosotros.html">Nosotros</a>
             <a href="../fnc/contacto.html">Contacto</a>
+            <a href="../fnc/eventos.html">Eventos</a>
         </div>
 
         <input type="checkbox" id="menu-toggle">
@@ -62,13 +62,16 @@
 
         <div class="dropdown-s">
             <a href="../fnc/shop.html">
-                <button class="dropdown-button-1">Shop</button>
+                <button class="dropdown-button-1" id="boton-shop2">Shop</button>
             </a>
             <a href="../fnc/Nosotros.html">
                 <button class="dropdown-button-2">Nosotros</button>
             </a>
             <a href="../fnc/contacto.html">
                 <button class="dropdown-button-3">Contacto</button>
+            </a>
+            <a href="../fnc/eventos.html">
+                <button class="dropdown-button-4">Eventos</button>
             </a>
         </div>
 
@@ -105,37 +108,7 @@
 
 
 
-    <!-- <main class="container-fluid">
-        <div class="row">
 
-            <section class="col-12 ps-0 pe-0 d-flex flex-column justify-content-center align-items-center sectionProd"
-                id="producto">
-                <div class="box-title-contact text-center d-flex justify-content-center align-items-center">
-                    <h4 data-aos="fade-up sectionProd">Nuestros Productos</h4><img src="./assets/iconoHeader.svg"
-                        alt="icono" data-aos="zoom-in">
-                </div>
-
-                <div class="sectionProd">
-                    <img class="productosTitle " src="./assets/nuestrosProductos.png" alt="" data-aos="fade-up">
-
-                    <div class="d-flex selectStyles text-center" data-aos="fade-right">
-                        <h4 class="selectText all" id="botonProducto1">Todos</h5>
-                            <h4 class="selectText all" id="botonProducto2">Bowls</h5>
-                                <h4 class="selectText all" id="botonProducto3">Floreros</h5>
-                                    <h4 class="selectText all" id="botonProducto4">Contenedores</h5>
-                                        <h4 class="selectText all" id="botonProducto4">Miniaturas</h5>
-                                            <h4 class="selectText all" id="botonProducto4">Ni idea</h5>
-                    </div>
-
-                    <div class="frame-container">
-                        <div class="card-scroll-container">
-                            <div id="contenedorProductos">
-                             
-                                <div id="cardsProductos" class="divProductos" data-aos="fade-right"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
     <main class="container-fluid">
         <section class="contenedor-main">
             <div class="row">
@@ -162,7 +135,7 @@
                     </div>
 
 
-                    <!-- Modal detalle producto (Ricardo)-->
+                    <!-- Modal detalle producto -->
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered " role="document">
@@ -185,22 +158,7 @@
             </div>
         </section>
     </main>
-    <!-- Modal detalle producto (Ricardo)-->
-    <!--    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close"
-                    id="cerrarModal"></button>
-                <div class="modal-body tamañoModal">
-                    <div id="contenedorDetalleProducto">
 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
     </section>
 
 
@@ -210,21 +168,27 @@
 
     <footer>
         <section class="footer-container">
-            <div class="links-footer">
-                <a href="#">Instagram</a>
-                <a href="#">Etsy</a>
-                <a href="#">Whatsapp</a>
+            <div class="links-footer-desktop">
+                <a href="https://www.instagram.com/feliznocumple_/" target="_blank">Instagram</a>
+                <a href="https://www.etsy.com/" target="_blank">Etsy</a>
+                <a href="whatsapp.com" target="_blank">Whatsapp</a>
+                <p>SITE CREDITS</p>
+            </div>
+            <div class="links-footer-mobile">
+                <a href="https://www.instagram.com/feliznocumple_/" target="_blank"><img
+                        src="../img/iconos-footer/instagram.svg" alt="instagram"></a>
+                <a href="https://www.etsy.com/" target="_blank"><img src="../img/iconos-footer/etsy.svg" alt="etsy"></a>
+                <a href="whatsapp.com" target="_blank"><img src="../img/iconos-footer/whatsapp.svg" alt="whatsapp"></a>
+                <p>SITE CREDITS</p>
             </div>
         </section>
     </footer>
     <!-- el agregar producto -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!--  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
-    <!--  <script src="./scripts/navbar.js"></script>
-    <script src="./scripts/carousel.js"></script> -->
+
     <script src="../scripts/main.js"></script>
-    <!--   <script src="./scripts/form.js"></script> -->
+
 </body>
 
 </html>

@@ -18,6 +18,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Fira+Sans+Condensed:wght@600&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <meta name="description" content="Feliz no Cumple, Quienes somos">
+    <meta name="keywords"
+        content="ceramica, decoracion del hogar, feliz no cumple, años, quienes son, handmade, bowl de ceramica">
+</head>
 
 <body class="body-nos">
     <div class="contenido-body">
@@ -27,8 +32,9 @@
             <nav class="navbar-s">
                 <div class="navbar-buttons-s">
                     <a href="../fnc/shop.html">Shop</a>
-                    <a href="../fnc/Nosotros.html">Nosotros</a>
+                    <a id="boton-nos1" href="../fnc/Nosotros.html">Nosotros</a>
                     <a href="../fnc/contacto.html">Contacto</a>
+                    <a href="../fnc/eventos.html">Eventos</a>
                 </div>
 
                 <input type="checkbox" id="menu-toggle">
@@ -42,73 +48,84 @@
                         <button class="dropdown-button-1">Shop</button>
                     </a>
                     <a href="../fnc/Nosotros.html">
-                        <button class="dropdown-button-2">Nosotros</button>
+                        <button class="dropdown-button-2" id="boton-nos2">Nosotros</button>
                     </a>
                     <a href="../fnc/contacto.html">
                         <button class="dropdown-button-3">Contacto</button>
+                    </a>
+                    <a href="../fnc/eventos.html">
+                        <button class="dropdown-button-4">Eventos</button>
                     </a>
                 </div>
 
 
                 <img class="logo" src="../img/logo.svg" onclick="location.href='../index.html'" alt="logo fnc">
-                <a class="icono-cart" href="../fnc/cart.html">
-                    <img class="logo-bolsa" src="../img/carrito.svg" alt="mi carrito">
-                </a>
+
+                <!-- <a class="icono-cart" href="./fnc/cart.html">
+                    <img class="logo-bolsa" src="img/carrito.svg" alt="mi carrito">
+                </a> -->
             </nav>
         </header>
         <main>
-            <div class="nos-container">
-                <div class="nos-card">
+            <div class="nos-fixed">
+                <div class="nos-container">
+                    <div class="nos-card">
 
-                    <div class="nos">
-                        <div style="float:left; min-width: 50vh; max-width: 50vh; margin: 1em;">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="d-block w-100" src="../img/slide1.jpg" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="../img/slide2.jpg" alt="Second slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="../img/slide3.jpg" alt="Third slide">
+                        <div class="nos">
+                            <div style="float:left; min-width: 35vh; max-width: 50vh; margin: 1em;">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="../img/slide1.jpg" alt="feliz no cumple">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="../img/slide2.jpg" alt="feliz no cumple">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="../img/slide3.jpg" alt="feliz no cumple">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="nos-text">
-                            <h3 style="font-family: 'Fira Sans Condensed', sans-serif; color: FF285C;"> Buenas!</h3>
-                            <p class="card-text-nos"> una marca de cerámicas tan divertidas, creativas, pop y locas que
-                                harán que tus espacios sean una fiesta de risas y originalidad. Estas cerámicas son
-                                mucho más que simples objetos decorativos, ¡son verdaderos comediantes en el mundo de la
-                                decoración!
-
-                                Imagínate una taza con una cara sonriente tan amplia que te contagia la risa cada vez
-                                que la ves. ¿Te gustaría comenzar tu día con una dosis extra de humor? Nada mejor que
-                                una taza FNC que te haga reír con un chiste cada mañana. Porque ¿quién puede
-                                resistirse a una taza que te sorprende con ocurrencias como: "Soy tan brillante que me
-                                tomo café solo para apagar las luces"?
-
-                                Y eso no es todo, las cerámicas de FNC no se limitan solo a tazas. ¿Te imaginas
-                                tener un plato de comida que te haga reír hasta que te duelan los cachetes? ¡Pues
-                                FNC lo hace posible! Sus platos decorados con caricaturas y chistes graciosos harán
-                                que cada comida se convierta en un espectáculo de humor.</p>
+                            <div class="nos-text">
+                                <h3 style="font-family: 'Fira Sans Condensed', sans-serif; color: FF285C;"> Buenas!</h3>
+                                <p class="card-text-nos"> Feliz no Cumple
+                                    surgió en 2017, empezamos como una empresa al por mayor repitiendo una y otra vez
+                                    cada
+                                    diseño, y ahora hacemos nuestros propios
+                                    productos, tratando de que cada uno tenga su propio proceso creativo y sea único,
+                                    bueno,
+                                    lo más que se pueda.
+                                    Buscamos que trabajar sea divertido ¿Podrán? </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
         <footer>
             <section class="footer-container">
-                <div class="links-footer">
-                    <a href="#">Instagram</a>
-                    <a href="#">Etsy</a>
-                    <a href="#">Whatsapp</a>
+                <div class="links-footer-desktop">
+                    <a href="https://www.instagram.com/feliznocumple_/" target="_blank">Instagram</a>
+                    <a href="https://www.etsy.com/" target="_blank">Etsy</a>
+                    <a href="whatsapp.com" target="_blank">Whatsapp</a>
+                    <p>SITE CREDITS</p>
+                </div>
+                <div class="links-footer-mobile">
+                    <a href="https://www.instagram.com/feliznocumple_/" target="_blank"><img
+                            src="../img/iconos-footer/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.etsy.com/" target="_blank"><img src="../img/iconos-footer/etsy.svg"
+                            alt="etsy"></a>
+                    <a href="whatsapp.com" target="_blank"><img src="../img/iconos-footer/whatsapp.svg"
+                            alt="whatsapp"></a>
+                    <p>SITE CREDITS</p>
                 </div>
             </section>
         </footer>

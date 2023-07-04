@@ -9,3 +9,37 @@ $backdrop-filter: blur(20px);
     background-position: center top;
     background-size: cover;
 }
+
+
+$azul: #1C2D46;
+$blanco: #FFFFFF;
+$fondoForm: rgba(255, 255, 255, 0.4);
+$violeta: rgba(96, 40, 255, 0.80);
+$rosa: #CB37E3;
+/* --gra: #6028FF, #FF285C; */
+$gra: linear-gradient(176deg, rgba(96, 40, 255, 0.80) 0%, rgba(255, 40, 92, 0.41) 100%);
+
+@mixin boton-principal {
+    width: 147px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $violeta;
+    color: #fff;
+    border: 1px solid $violeta;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: .5s;
+
+
+}
+
+boton-principal:hover {
+    color: $rosa;
+}
+
+// Uso del mixin
+/* .button {
+    @include button-styles;
+} */
