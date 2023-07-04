@@ -1,179 +1,182 @@
-  .body-image {
-      /* z-index: -5; */
-      position: relative;
-      width: 100%;
-      height: 530.000vh;
-      /*  height: 3535px; */
+   /* .body-image {
 
-      background-image: url(../img/fondo-index.svg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+       position: relative;
+       width: 100%;
+       height: 530.000vh;
+       height: 3535px;
 
-
-
-  }
-
-
-  //nubes
-
-
-  .main-container-index {
-      position: fixed;
-      background-repeat: no-repeat;
-      height: 25.375vw;
-      width: 27.375vw;
-
-      margin-left: 3%;
-      margin-top: 10%;
-      background-image: url(../img/fnc.svg);
-      background-size: contain;
-
-  }
-
-  .nube-1 {
-      position: absolute;
-      width: 338px;
-      height: 329px;
-      left: 22%;
-      top: 5%;
-      background-image: url(../img/productos/nube-1.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-
-  }
-
-
-  .nube-2 {
-      height: 298px;
-      width: 354px;
-
-      position: absolute;
-      top: 3%;
-      left: 45%;
-      background-image: url(../img/productos/nube-2.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-
-
-  }
-
-  .nube-3 {
-      height: 340px;
-      width: 380px;
-      position: absolute;
-      right: 3%;
-      top: 5%;
-      background-image: url(../img/productos/nube-3.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-
-  }
-
-
-  .nube-4 {
-      width: 366px;
-      height: 441.687px;
-      position: absolute;
-      right: 35%;
-      top: 20%;
-      background-image: url(../img/productos/nube-4.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-
-  }
-
-  .nube-5 {
-      width: 326.991px;
-      height: 382.05px;
-      position: absolute;
-      right: 15%;
-      top: 33%;
-      background-image: url(../img/productos/nube-5.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-
-  }
-
-
-  .nube-6 {
-      width: 370.998px;
-      height: 582.666px;
-      position: absolute;
-      right: 35%;
-      top: 43%;
-      background-image: url(../img/productos/nube-6.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-
-  }
-
-  .nube-7 {
-      width: 448px;
-      height: 282px;
-      position: absolute;
-      right: 15%;
-      top: 63%;
-      background-image: url(../img/productos/nube-7.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-
-  }
-
-  .nube-8 {
-      width: 423.735px;
-      height: 420.303px;
-      position: absolute;
-      right: 25%;
-      top: 77%;
-      background-image: url(../img/productos/nube-8.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-
-  }
+       background-image: url(../img/fondo-index.svg);
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
 
 
 
+   }
+ */
 
-  .nube-1:hover {
-      background-image: url(../img/productos/nube-1-hover.svg);
-      transition: all 0.5s;
+   //nubes
 
-  }
 
-  .nube-2:hover {
-      background-image: url(../img/productos/nube-2-hover.svg);
-      /* transform: translate(1px); */
-      transition: all 0.5s;
+   .container-index {
+       position: fixed;
+       background-repeat: no-repeat;
+       height: 25.375vw;
+       width: 27.375vw;
 
-  }
+       margin-left: 3%;
+       margin-top: 10%;
+       background-image: url(../img/fnc.png);
+       background-size: contain;
 
-  .nube-3:hover {
-      background-image: url(../img/productos/nube-3-hover.svg);
-      transition: all 0.5s;
-  }
+   }
 
-  .nube-4:hover {
-      background-image: url(../img/productos/nube-4-hover.svg);
-      transition: all 0.5s;
-  }
+   /* TENIA TODAS LAS IMAGENES EN SVG PERO LAS TUVE QUE PASAR A PNG PORQUE LA LIBRERIA DE ANIMACION AOS TRAE CONSTANTEMENTE PROBLEMAS RANDOM CON LAS IMAGENES SVG, NO LOS PUEDO SOLUCIONAR A MENOS QUE SAQUE LAS ANIMACIONES */
 
-  .nube-5:hover {
-      background-image: url(../img/productos/nube-5-hover.svg);
-      transition: all 0.5s;
-  }
 
-  .nube-6:hover {
-      background-image: url(../img/productos/nube-6-hover.svg);
-      transition: all 0.5s;
-  }
+   .nube-1 {
+       position: absolute;
+       width: 338px;
+       height: 329px;
+       left: 22%;
+       top: 5%;
+       background-image: url(../img/productos/nube-1.png);
+       background-size: contain;
+       background-repeat: no-repeat;
 
-  .nube-7:hover {
-      background-image: url(../img/productos/nube-7-hover.svg);
-      transition: all 0.5s;
-  }
+   }
 
-  .nube-8:hover {
-      background-image: url(../img/productos/nube-8-hover.svg);
-      transition: all 0.5s;
-  }
+
+   .nube-2 {
+       height: 298px;
+       width: 354px;
+
+       position: absolute;
+       top: 3%;
+       left: 45%;
+       background-image: url(../img/productos/nube-2.png);
+       background-size: cover;
+       background-repeat: no-repeat;
+
+
+   }
+
+   .nube-3 {
+       height: 340px;
+       width: 380px;
+       position: absolute;
+       right: 3%;
+       top: 5%;
+       background-image: url(../img/productos/nube-3.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+
+   }
+
+
+   .nube-4 {
+       width: 366px;
+       height: 441.687px;
+       position: absolute;
+       right: 35%;
+       top: 20%;
+       background-image: url(../img/productos/nube-4.svg);
+       background-size: contain;
+       background-repeat: no-repeat;
+
+   }
+
+   .nube-5 {
+       width: 326.991px;
+       height: 382.05px;
+       position: absolute;
+       right: 15%;
+       top: 33%;
+       background-image: url(../img/productos/nube-5.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+
+   }
+
+
+   .nube-6 {
+       width: 370.998px;
+       height: 582.666px;
+       position: absolute;
+       right: 35%;
+       top: 43%;
+       background-image: url(../img/productos/nube-6.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+
+   }
+
+   .nube-7 {
+       width: 448px;
+       height: 282px;
+       position: absolute;
+       right: 15%;
+       top: 63%;
+       background-image: url(../img/productos/nube-7.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+
+   }
+
+   .nube-8 {
+       width: 423.735px;
+       height: 420.303px;
+       position: absolute;
+       right: 25%;
+       top: 77%;
+       background-image: url(../img/productos/nube-8.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+
+   }
+
+
+
+
+   .nube-1:hover {
+       background-image: url(../img/productos/nube-1-hover.png);
+       transition: all 0.5s;
+
+   }
+
+   .nube-2:hover {
+       background-image: url(../img/productos/nube-2-hover.png);
+       /* transform: translate(1px); */
+       transition: all 0.5s;
+
+   }
+
+   .nube-3:hover {
+       background-image: url(../img/productos/nube-3-hover.png);
+       transition: all 0.5s;
+   }
+
+   .nube-4:hover {
+       background-image: url(../img/productos/nube-4-hover.svg);
+       transition: all 0.5s;
+   }
+
+   .nube-5:hover {
+       background-image: url(../img/productos/nube-5-hover.png);
+       transition: all 0.5s;
+   }
+
+   .nube-6:hover {
+       background-image: url(../img/productos/nube-6-hover.png);
+       transition: all 0.5s;
+   }
+
+   .nube-7:hover {
+       background-image: url(../img/productos/nube-7-hover.png);
+       transition: all 0.5s;
+   }
+
+   .nube-8:hover {
+       background-image: url(../img/productos/nube-8-hover.png);
+       transition: all 0.5s;
+   }

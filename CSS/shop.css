@@ -26,6 +26,12 @@
     position: fixed;
 }
 
+.container-fluid {
+    height: 200vh;
+    width: auto;
+
+}
+
 .row {
 
     justify-content: center;
@@ -166,10 +172,14 @@
 
 
 .selectText {
-    padding-right: 65px;
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-self: center;
     color: var(--violeta);
     cursor: pointer;
 }
+
+
 
 .selectText:hover {
     color: var(--rosa);
@@ -220,7 +230,7 @@
     display: flex;
     justify-content: center;
     margin-top: 21px;
-    margin-left: 25px;
+    /* margin-left: 10px; */
 
 
 }
@@ -261,7 +271,7 @@
     padding-right: 80px;
     padding-left: 20px;
     width: 120px;
-    margin-right: 20px;
+
     height: 35px;
     margin-top: 10px;
     border-radius: 13px;
@@ -298,7 +308,7 @@
 
 
 .card-scroll-container {
-    height: 100%;
+    height: 94%;
     overflow: auto;
     padding-bottom: 20px;
 }
@@ -398,7 +408,7 @@
 }
 
 .textDescriptionModal {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 248px;
     margin-right: 36px;
     margin-top: 17px;
@@ -633,6 +643,7 @@
         .textDescriptionModal {
             text-align: center !important;
             height: 95px;
+            font-size: 14px;
             margin-left: 124px !important;
             margin-top: 10px !important;
             margin-bottom: 25px !important;
@@ -680,6 +691,7 @@
             .textDescriptionModal {
                 text-align: center !important;
                 height: 95px;
+                font-size: 14px;
                 margin-left: 32px !important;
                 margin-top: 10px !important;
                 margin-bottom: 25px !important;
@@ -703,6 +715,12 @@
             .img1 {
                 margin-left: -130px !important;
             }
+
+            /*  .infoCard {
+
+                margin-left: 0%;
+ */
+
         }
     }
 }
