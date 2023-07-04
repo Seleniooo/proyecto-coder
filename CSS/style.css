@@ -21,36 +21,41 @@ body a :hover :active :focus {
   color: inherit;
 }
 
-.body-image {
-  /* z-index: -5; */
-  position: relative;
-  width: 100%;
-  height: 530vh;
-  /*  height: 3535px; */
-  background-image: url(../img/fondo-index.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+/* .body-image {
 
-.main-container-index {
+      position: relative;
+      width: 100%;
+      height: 530.000vh;
+      height: 3535px;
+
+      background-image: url(../img/fondo-index.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+
+  }
+*/
+.container-index {
   position: fixed;
   background-repeat: no-repeat;
   height: 25.375vw;
   width: 27.375vw;
   margin-left: 3%;
   margin-top: 10%;
-  background-image: url(../img/fnc.svg);
+  background-image: url(../img/fnc.png);
   background-size: contain;
 }
 
+/* TENIA TODAS LAS IMAGENES EN SVG PERO LAS TUVE QUE PASAR A PNG PORQUE LA LIBRERIA DE ANIMACION AOS TRAE CONSTANTEMENTE PROBLEMAS RANDOM CON LAS IMAGENES SVG, NO LOS PUEDO SOLUCIONAR A MENOS QUE SAQUE LAS ANIMACIONES */
 .nube-1 {
   position: absolute;
   width: 338px;
   height: 329px;
   left: 22%;
   top: 5%;
-  background-image: url(../img/productos/nube-1.svg);
+  background-image: url(../img/productos/nube-1.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -61,7 +66,7 @@ body a :hover :active :focus {
   position: absolute;
   top: 3%;
   left: 45%;
-  background-image: url(../img/productos/nube-2.svg);
+  background-image: url(../img/productos/nube-2.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -72,7 +77,7 @@ body a :hover :active :focus {
   position: absolute;
   right: 3%;
   top: 5%;
-  background-image: url(../img/productos/nube-3.svg);
+  background-image: url(../img/productos/nube-3.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -94,7 +99,7 @@ body a :hover :active :focus {
   position: absolute;
   right: 15%;
   top: 33%;
-  background-image: url(../img/productos/nube-5.svg);
+  background-image: url(../img/productos/nube-5.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -105,7 +110,7 @@ body a :hover :active :focus {
   position: absolute;
   right: 35%;
   top: 43%;
-  background-image: url(../img/productos/nube-6.svg);
+  background-image: url(../img/productos/nube-6.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -116,7 +121,7 @@ body a :hover :active :focus {
   position: absolute;
   right: 15%;
   top: 63%;
-  background-image: url(../img/productos/nube-7.svg);
+  background-image: url(../img/productos/nube-7.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -127,24 +132,24 @@ body a :hover :active :focus {
   position: absolute;
   right: 25%;
   top: 77%;
-  background-image: url(../img/productos/nube-8.svg);
+  background-image: url(../img/productos/nube-8.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .nube-1:hover {
-  background-image: url(../img/productos/nube-1-hover.svg);
+  background-image: url(../img/productos/nube-1-hover.png);
   transition: all 0.5s;
 }
 
 .nube-2:hover {
-  background-image: url(../img/productos/nube-2-hover.svg);
+  background-image: url(../img/productos/nube-2-hover.png);
   /* transform: translate(1px); */
   transition: all 0.5s;
 }
 
 .nube-3:hover {
-  background-image: url(../img/productos/nube-3-hover.svg);
+  background-image: url(../img/productos/nube-3-hover.png);
   transition: all 0.5s;
 }
 
@@ -154,22 +159,22 @@ body a :hover :active :focus {
 }
 
 .nube-5:hover {
-  background-image: url(../img/productos/nube-5-hover.svg);
+  background-image: url(../img/productos/nube-5-hover.png);
   transition: all 0.5s;
 }
 
 .nube-6:hover {
-  background-image: url(../img/productos/nube-6-hover.svg);
+  background-image: url(../img/productos/nube-6-hover.png);
   transition: all 0.5s;
 }
 
 .nube-7:hover {
-  background-image: url(../img/productos/nube-7-hover.svg);
+  background-image: url(../img/productos/nube-7-hover.png);
   transition: all 0.5s;
 }
 
 .nube-8:hover {
-  background-image: url(../img/productos/nube-8-hover.svg);
+  background-image: url(../img/productos/nube-8-hover.png);
   transition: all 0.5s;
 }
 
@@ -277,9 +282,21 @@ boton-principal:hover {
   grid-template-rows: auto 1fr auto;
 }
 
-.body-shop {
+.body-index2 {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-position: center top;
+  background-size: cover;
+  background-image: url(../img/fondo-index.svg);
+  height: 530vh;
+  position: relative;
+  width: 100%;
+}
+
+.body-shop {
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
   min-height: 100vh;
   background-position: center top;
   background-size: cover;
@@ -287,8 +304,8 @@ boton-principal:hover {
 }
 
 .body-nos {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
   min-height: 100vh;
   background-position: center top;
   background-size: cover;
@@ -296,8 +313,8 @@ boton-principal:hover {
 }
 
 .body-contacto {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
   min-height: 100vh;
   background-position: center top;
   background-size: cover;
@@ -305,8 +322,8 @@ boton-principal:hover {
 }
 
 .body-carrito {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
   min-height: 100vh;
   background-position: center top;
   background-size: cover;
@@ -314,8 +331,8 @@ boton-principal:hover {
 }
 
 .body-detalles {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
   min-height: 100vh;
   background-position: center top;
   background-size: cover;
@@ -367,7 +384,11 @@ footer .footer-container .links-footer-mobile {
   justify-content: space-around;
 }
 
-.body-nos .contenido-body main .nos-fixed .nos-container {
+.body-nos .contenido-body .nos-main {
+  height: 200vh;
+  width: auto;
+}
+.body-nos .contenido-body .nos-main .nos-fixed .nos-container {
   display: flex;
   margin-top: 15vh;
   justify-content: center;
@@ -378,7 +399,7 @@ footer .footer-container .links-footer-mobile {
   /* margin-left: 20%; */
   /*   */
 }
-.body-nos .contenido-body main .nos-fixed .nos-container .nos-card {
+.body-nos .contenido-body .nos-main .nos-fixed .nos-container .nos-card {
   z-index: 0;
   padding: 2vw;
   height: fit-content;
@@ -393,7 +414,7 @@ footer .footer-container .links-footer-mobile {
   border-radius: 8px;
   position: fixed;
 }
-.body-nos .contenido-body main .nos-fixed .nos-container .nos-card .nos .nos-text {
+.body-nos .contenido-body .nos-main .nos-fixed .nos-container .nos-card .nos .nos-text {
   padding: 2em;
   font-family: "Almarai", sans-serif;
 }
@@ -402,6 +423,8 @@ footer .footer-container .links-footer-mobile {
   display: flex;
   justify-content: center;
   align-content: center;
+  height: 200vh;
+  width: auto;
 }
 .body-detalles .main-detalles .eventos {
   margin-top: 4.5rem;
@@ -560,11 +583,12 @@ footer .footer-container .links-footer-mobile {
 .main-contacto {
   display: flex;
   justify-content: center;
+  height: 200vh;
+  width: auto;
 }
 
 @media only screen and (max-width: 500px) {
   .navbar-s {
-    height: 80px;
     justify-content: space-between;
     padding-left: 9.66%;
     padding-right: 9.66%;
@@ -709,7 +733,7 @@ footer .footer-container .links-footer-mobile {
     width: 80px;
     height: 42px;
   }
-  .main-container-index {
+  .container-index {
     height: 29.375vw;
     width: 35vw;
     margin-left: 5%;
@@ -722,7 +746,6 @@ footer .footer-container .links-footer-mobile {
     height: 194px;
     left: 7%;
     top: 7%;
-    background-image: url(../img/productos/nube-1.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -741,7 +764,6 @@ footer .footer-container .links-footer-mobile {
   .nube-4 {
     width: 266px;
     height: 341.687px;
-    background-image: url(../img/productos/nube-4-hover.svg);
     right: 24%;
     top: 20%;
   }
@@ -791,6 +813,15 @@ footer .footer-container .links-footer-mobile {
   .numeroCarrito {
     margin-left: 28px;
   }
+  .form-contenedor {
+    position: relative;
+  }
+  .nos-card {
+    position: relative !important;
+  }
+  .selectStyles .selectText {
+    font-size: 14px;
+  }
 }
 /* .dropdown-s translate {
         transform: translateX(500px, 50px)
@@ -805,11 +836,10 @@ footer .footer-container .links-footer-mobile {
     width: 90% !important;
   }
   .navbar-s {
-    height: 80px;
+    height: 89px;
     justify-content: space-between;
     padding-left: 9.66%;
     padding-right: 9.66%;
-    height: 89px;
     align-items: center;
     position: fixed;
     top: 0;
@@ -960,7 +990,7 @@ footer .footer-container .links-footer-mobile {
   footer .footer-container .links-footer-mobile {
     display: flex !important;
   }
-  .main-container-index {
+  .container-index {
     height: 29.375vw;
     width: 35vw;
     margin-left: 5%;
@@ -968,36 +998,28 @@ footer .footer-container .links-footer-mobile {
     background-size: contain;
   }
   .nube-1 {
-    position: absolute;
     width: 273px;
     height: 259px;
     left: 4%;
     top: 5%;
-    background-image: url(../img/productos/nube-1.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
   .nube-2 {
-    /* display: flex;
-    flex-wrap: wrap; */
     height: 26vw;
     width: 30vw;
-    position: absolute;
     top: 3%;
     left: 40%;
-    background-image: url(../img/productos/nube-2.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
   .nube-3 {
     height: 192px;
     width: 225px;
-    position: absolute;
     right: 8%;
-    top: 7%;
-    background-image: url(../img/productos/nube-3.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    top: 12%;
+  }
+  .nube-4 {
+    width: 266px;
+    height: 341.687px;
+    right: 24%;
+    top: 20%;
   }
   .main-contacto .card-contacto form .form-group button {
     font-size: 10px;
@@ -1005,6 +1027,9 @@ footer .footer-container .links-footer-mobile {
   .body-detalles .main-detalles .eventos {
     margin-top: 6rem;
     width: 90%;
+  }
+  .nos-card {
+    position: relative !important;
   }
   .frame-container {
     height: 617px;
@@ -1014,7 +1039,7 @@ footer .footer-container .links-footer-mobile {
   }
 }
 @media only screen and (min-width: 811px) and (max-width: 1024px) {
-  .main-container-index {
+  .container-index {
     margin-left: 5%;
     margin-top: 20%;
     background-size: contain;
@@ -1025,23 +1050,15 @@ footer .footer-container .links-footer-mobile {
     left: 7%;
     top: 10%;
   }
-  /*
-
-      .nube-2 {
-
-          height: 26vw;
-          width: 31vw;
-          position: absolute;
-          top: 3%;
-          left: 40%;
-          background-image: url(../img/productos/nube-2.svg);
-          background-size: cover;
-          background-repeat: no-repeat;
-
-      }
-
-
-  */
+  .nube-2 {
+    height: 26vw;
+    width: 31vw;
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .nube-3 {
     height: 239px;
     width: 280px;
@@ -1069,7 +1086,7 @@ footer .footer-container .links-footer-mobile {
   .eventos iframe {
     display: none;
   }
-  .main-container-index {
+  .container-index {
     height: 25vw;
     width: 26vw;
     margin-left: 5%;
@@ -1077,12 +1094,8 @@ footer .footer-container .links-footer-mobile {
     background-size: contain;
   }
   .nube-1 {
-    position: absolute;
     left: 15%;
     top: 8%;
-    background-image: url(../img/productos/nube-1.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
   /*
 
@@ -1122,11 +1135,12 @@ footer .footer-container .links-footer-mobile {
 
   */
 }
+/* 
 main {
-  height: 200vh;
-  width: auto;
+    height: 200vh;
+    width: auto;
 }
-
+ */
 /* @media screen and (max-width: 1440px) {
     .container-cards {
         margin-left: 10vw;

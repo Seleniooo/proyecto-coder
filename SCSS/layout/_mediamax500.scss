@@ -3,7 +3,7 @@
 
 
     .navbar-s {
-        height: 80px;
+
         justify-content: space-between;
         padding-left: 9.66%;
         padding-right: 9.66%;
@@ -187,7 +187,7 @@
 
 
 
-    .main-container-index {
+    .container-index {
 
         height: 29.375vw;
         width: 35vw;
@@ -206,7 +206,7 @@
         height: 194px;
         left: 7%;
         top: 7%;
-        background-image: url(../img/productos/nube-1.svg);
+
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -235,7 +235,7 @@
     .nube-4 {
         width: 266px;
         height: 341.687px;
-        background-image: url(../img/productos/nube-4-hover.svg);
+
         right: 24%;
         top: 20%;
 
@@ -323,7 +323,21 @@
         margin-left: 28px;
     }
 
+    .form-contenedor {
+        position: relative;
+    }
 
+    .nos-card {
+        position: relative !important;
+    }
+
+    .selectStyles {
+
+
+        .selectText {
+            font-size: 14px;
+        }
+    }
 }
 
 /* .dropdown-s translate {
