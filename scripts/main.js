@@ -27,17 +27,7 @@ const producto5 = new Producto(5, "Sillón perrito", "../img/productos/foto6.svg
 const producto6 = new Producto(6, "Flor swetter", "../img/productos/foto7.svg", "Cerámica", "20cm de ancho por 15 de alto, alta temperatura", "cat2", "", "", "", "");
 const producto7 = new Producto(7, "Flor cuadros", "../img/productos/foto8.svg", "Cerámica", "20 cm de alto x 10 de ancho, alta temeratira, esmaltado, hecho a mano", "cat2", "", "", "", "");
 const producto8 = new Producto(8, "Bowl    carita", "../img/productos/foto9.svg", "Cerámica", "10 x 10 cm, bowl de ceramica, alta temperatura, hacho a mano", "cat1", "", "", "", "");
-/*const producto9 = new Producto(9, "Cartuchera", "", "sublimable", "Cartuchera personalizada de diferentes tamaños.", "cat1", "2 pisos", "Sublimable", "Sobre", "1 piso");
-const producto10 = new Producto(10, "Taza recta polimero", "", "sublimable", "Totalmente personalizable, consultar por cantidad.", "cat3", "sublimable", "Diseños", "300ml", "500ml");
-const producto11 = new Producto(11, "Taza recta ceramica", "", "sublimable", "Totalmente personalizable, consultar por cantidad.", "cat3", "sublimable", "Diseños", "300ml", "500ml");
-const producto12 = new Producto(12, "Mochila", "", "sublimable", "Cordura y simil neopren para sublimar", "cat3", "Neopren", "Sublimable", "Niños", "Adultos");
-const producto13 = new Producto(13, "Botinero", "", "sublimable", "Cordura y simil neopren para sublimar", "cat3", "Neopren", "Sublimable", "Negro", "Cordura");
-const producto14 = new Producto(14, "Bolso matero", "", "sublimable", "Cordura y simil neopren para sublimar", "cat3", "Sublimable", "Neopren", "Negro", "Cordura");
-const producto15 = new Producto(15, "Pines", "", "sublimable", "Pines ṕublicitarios, prendedores, destapadores, llaveros, espejos.", "polimero", "Sublimable", "Diseños", "Tamaños");
-const producto16 = new Producto(16, "Fundas", "", "sublimable", "Cordura y simil neopren para sublimar.", "cat3", "Tablet", "Sublimable", "Notebook", "Celular");
-const producto17 = new Producto(17, "Anotador", "", "sublimable", "Anotadores de 40 hojas ralladas, cuadriculadas o lisas.", "cat3", "Sublimable", "Carton", "Chico", "Anillado");
-const producto18 = new Producto(18, "Set asador", "", "sublimable", "Cordura y simil neopren para sublimar", "cat3", "Cordura", "Sublimable", "Diseños", "Negro");
- */
+
 //array con todos los productos de la web
 const arrayProductos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8];
 console.log(arrayProductos)
@@ -47,9 +37,6 @@ const modal = [];
 //variable(div) donde se pegan los productos
 const cardProductos = document.getElementById("cardsProductos")
 
-//FUNCIONES DE SECCION PRODUCTOS
-
-//funcion para pintar productos en la seccion Productos
 
 //funcion principal para mostrar productos
 function mostrarProducto() {
@@ -318,52 +305,7 @@ const sendcarrito = () => {
         cantidad = Producto.precio * Producto.cantidad
     })
 
-    mandarCarrito.innerHTML = ` <button class="text-center botonHeader"" ><a class="botonPresupuesto" href="https://api.whatsapp.com/send?phone=543513721017&text=Hola%20LKS!%20Me%20gustaria%20hacer%20el%20siguiente%20pedido:%0A%0A${totalCompra}%0A%0A" target="_blank"</>Pedir Presupuesto</button>`
+    mandarCarrito.innerHTML = ` <button class="text-center botonHeader"" ><a class="botonPresupuesto" href="https://wa.me/34644024685?&text=Hola%20FNC:%20Me%20gustaria%20hacer%20el%20siguiente%20pedido:%0A%0A${totalCompra}%0A%0A" target="_blank"</>Consultar</button>`
 
 }
 
-//BUSCADOR
-
-//funcion Buscador <h5 class="textoBuscador" >${producto.nombre}</h5>
-/* const buscador = document.getElementById("buscador");
-const resultado = document.getElementById("resultado");
-const busqueda = document.getElementById("busqueda");
-
-const filtrar = () => {
-    resultado.innerHTML = '';
-    const texto = buscador.value.toLowerCase();
-    for (let producto of arrayProductos) {
-        let nombre = producto.nombre.toLowerCase();
-
-        if (nombre.indexOf(texto) !== -1) {
-            resultado.innerHTML +=
-
-                `<div class="borderBusqueda">
-                    <li class="listStyles">
-                       <img class="img1"  src=${producto.img} />
-                       <div>
-                       <h6 class="textBuscador">${producto.nombre}</h5>
-                       </div>
-                       <button class=" botonBuscador" id= "botton${producto.id}" onClick="agregarAlModal(${producto.id}),mostrarDetalleProducto()" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ><img class="ojoStyle" src="./assets/ojo.png"/></button>    
-                    </li>
-                    </div>`
-            busqueda.style.opacity = 1;
-
-            const botton = document.getElementById(`botton${producto.id}`);
-            botton.addEventListener("click", () => {
-                agregarAlModal(producto.id);
-
-            });
-        }
-
-        const cerrarBusqueda = document.getElementById("cerrarBusqueda")
-        cerrarBusqueda.addEventListener("click", () => {
-            busqueda.style.opacity = 0;
-        })
-    };
-
-};
-
-buscador.addEventListener("keyup", filtrar)
-
- */

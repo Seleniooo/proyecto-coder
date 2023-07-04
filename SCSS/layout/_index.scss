@@ -59,16 +59,80 @@
   }
 
   .nube-3 {
-      height: 21.375vw;
-      width: 22.375vw;
+      height: 340px;
+      width: 380px;
       position: absolute;
       right: 3%;
-      top: 9%;
+      top: 5%;
       background-image: url(../img/productos/nube-3.svg);
       background-size: contain;
       background-repeat: no-repeat;
 
   }
+
+
+  .nube-4 {
+      width: 366px;
+      height: 441.687px;
+      position: absolute;
+      right: 35%;
+      top: 20%;
+      background-image: url(../img/productos/nube-4.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+  }
+
+  .nube-5 {
+      width: 326.991px;
+      height: 382.05px;
+      position: absolute;
+      right: 15%;
+      top: 33%;
+      background-image: url(../img/productos/nube-5.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+  }
+
+
+  .nube-6 {
+      width: 370.998px;
+      height: 582.666px;
+      position: absolute;
+      right: 35%;
+      top: 43%;
+      background-image: url(../img/productos/nube-6.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+  }
+
+  .nube-7 {
+      width: 448px;
+      height: 282px;
+      position: absolute;
+      right: 15%;
+      top: 63%;
+      background-image: url(../img/productos/nube-7.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+  }
+
+  .nube-8 {
+      width: 423.735px;
+      height: 420.303px;
+      position: absolute;
+      right: 25%;
+      top: 77%;
+      background-image: url(../img/productos/nube-8.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+  }
+
+
 
 
   .nube-1:hover {
@@ -86,5 +150,30 @@
 
   .nube-3:hover {
       background-image: url(../img/productos/nube-3-hover.svg);
+      transition: all 0.5s;
+  }
+
+  .nube-4:hover {
+      background-image: url(../img/productos/nube-4-hover.svg);
+      transition: all 0.5s;
+  }
+
+  .nube-5:hover {
+      background-image: url(../img/productos/nube-5-hover.svg);
+      transition: all 0.5s;
+  }
+
+  .nube-6:hover {
+      background-image: url(../img/productos/nube-6-hover.svg);
+      transition: all 0.5s;
+  }
+
+  .nube-7:hover {
+      background-image: url(../img/productos/nube-7-hover.svg);
+      transition: all 0.5s;
+  }
+
+  .nube-8:hover {
+      background-image: url(../img/productos/nube-8-hover.svg);
       transition: all 0.5s;
   }

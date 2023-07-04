@@ -2,9 +2,6 @@
 
 
 
-
-
-
     .navbar-s {
         height: 80px;
         justify-content: space-between;
@@ -40,6 +37,7 @@
 
             width: 100%;
 
+
             .dropdown-button-1 {
 
                 position: fixed;
@@ -57,13 +55,14 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 32px;
-                color: #000;
+                color: rgba(96, 40, 255, 0.80);
                 /*  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
                 background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
                 box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.12);
                 backdrop-filter: blur(20px);
                 mix-blend-mode: overlay; */
             }
+
 
             .dropdown-button-2 {
 
@@ -82,7 +81,7 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 32px;
-                color: #000;
+                color: rgba(96, 40, 255, 0.80);
                 /* border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
                 background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
                 
@@ -108,7 +107,7 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 32px;
-                color: #000;
+                color: rgba(96, 40, 255, 0.80);
                 /*   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
                 background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
                
@@ -136,7 +135,7 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 32px;
-                color: #000;
+                color: rgba(96, 40, 255, 0.80);
                 /* border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
                 background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
                 
@@ -145,8 +144,15 @@
                 mix-blend-mode: overlay; */
             }
 
-            .dropdown-button:hover {
+            .dropdown-button-1:hover,
+            .dropdown-button-2:hover,
+            .dropdown-button-3:hover,
+            .dropdown-button-4:hover {
                 cursor: pointer;
+                background: rgb(151, 119, 238);
+                color: white;
+
+
             }
         }
 
@@ -181,31 +187,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .main-container-index {
 
         height: 29.375vw;
@@ -223,8 +204,8 @@
         position: absolute;
         width: 207px;
         height: 194px;
-        left: 5%;
-        top: 6%;
+        left: 7%;
+        top: 7%;
         background-image: url(../img/productos/nube-1.svg);
         background-size: contain;
         background-repeat: no-repeat;
@@ -235,12 +216,9 @@
 
         height: 191px;
         width: 230px;
-        position: absolute;
         top: 2%;
         left: 35%;
-        background-image: url(../img/productos/nube-2.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
+
 
     }
 
@@ -249,12 +227,51 @@
     .nube-3 {
         height: 229px;
         width: 251px;
-        position: absolute;
         right: 5%;
-        top: 10%;
-        background-image: url(../img/productos/nube-3.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
+        top: 12%;
+
+    }
+
+    .nube-4 {
+        width: 266px;
+        height: 341.687px;
+        background-image: url(../img/productos/nube-4-hover.svg);
+        right: 24%;
+        top: 20%;
+
+
+    }
+
+
+    .nube-5 {
+        width: 226.991px;
+        height: 282.05px;
+        right: 20%;
+        top: 32%;
+
+
+    }
+
+    .nube-6 {
+        width: 270.998px;
+        height: 482.666px;
+        right: 30%;
+        top: 40%;
+    }
+
+    .nube-7 {
+        width: 348px;
+        height: 182px;
+
+        right: 8%;
+        top: 60%;
+    }
+
+    .nube-8 {
+        width: 323.735px;
+        height: 320.303px;
+        right: 23%;
+        top: 70%;
     }
 
 
@@ -273,6 +290,44 @@
         }
     }
 
+    footer {
+
+        .footer-container {
+
+            p {
+                align-self: flex-end;
+                text-align: right;
+                font-size: 12px;
+                left: 80%;
+            }
+
+            .links-footer-desktop {
+                display: none !important;
+            }
+
+            .links-footer-mobile {
+                display: flex !important;
+            }
+        }
+    }
+
+
+
+
+    .frame-container {
+        height: 617px;
+    }
+
+
+    .numeroCarrito {
+        margin-left: 28px;
+    }
 
 
 }
+
+/* .dropdown-s translate {
+        transform: translateX(500px, 50px)
+    }
+
+    ; */

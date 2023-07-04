@@ -37,7 +37,7 @@
 /* Modal carrito*/
 .modalColor {
     border: none;
-    box-shadow: 0px 1px 7px #45ACB4;
+    box-shadow: 0px 1px 7px #640b88;
 }
 
 .botonEliminar {
@@ -57,7 +57,7 @@
 .numeroCarrito {
     color: white;
     padding: 5px;
-    background-color: var(--ladrillo);
+    background-color: var(--violeta);
     border-radius: 50%;
     position: absolute;
     margin-left: 50px;
@@ -107,7 +107,7 @@
 }
 
 .modalTextoCarrito {
-    border-bottom: 1.5px dashed var(--celeste);
+    border-bottom: 1.5px dashed var(--violeta);
 
 }
 
@@ -137,7 +137,7 @@
 
 .carritoContainer {
     margin-top: 10px;
-    border-bottom: 1.5px dashed var(--celeste);
+    border-bottom: 1.5px solid var(--rosa);
 }
 
 .imgCarrito {
@@ -149,58 +149,11 @@
 
 .catCant {
     display: none;
-    /* margin-left: -5px;
-    border-radius: 15px;
-    width: 90px;
-    padding: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-color: var(--celeste);
-    background-color: transparent;
-    border: 1px solid var(--celeste);
-    margin-top: 3px;
- */
+
 }
 
 
 
-/* @-webkit-keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(1000px);
-        transform: translateX(1000px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(1000px);
-        transform: translateX(1000px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
- */
-
-
-/*seccion nuestros productos*/
-/* .productosTitle {
-    margin-top: 50px;
-    width: 600px;
-    margin-left: 140px;
-
-} */
 
 
 
@@ -213,28 +166,22 @@
 
 
 .selectText {
-    padding-right: 15px;
+    padding-right: 65px;
     color: var(--violeta);
     cursor: pointer;
 }
 
 .selectText:hover {
-    color: var(--ladrillo);
-    text-decoration-line: overline;
-    text-decoration: underline;
+    color: var(--rosa);
+    text-decoration-line: none;
+    text-decoration: none;
 
 }
 
-/* .cambiaColor {
-    color: green;
-} */
+
 
 .divProductos {
-    /* display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 400px);
-    justify-content: center;
-    margin-bottom: 50px; */
+
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
@@ -328,18 +275,12 @@
 
 }
 
-/* .botonProductos2 {
+.botonHeader:hover {
+    color: var(--blanco);
+    background-color: var(--rosa);
 
-    width: 120px;
-    padding-right: 20px;
+}
 
-    background-color: var(--celeste);
-    height: 35px;
-    margin-top: 10px;
-    border-radius: 13px;
-    font-weight: 500;
-    transition: .5s;
-} */
 
 .frame-container {
     height: 440px;
@@ -376,27 +317,7 @@
     border-radius: 100px;
 }
 
-/* 
-.botonProductos2:hover {
-    background-color: var(--blanco);
-    border: 1px solid var(--azul);
-} */
 
-/* .iconoWhatapps {
-    position: absolute;
-    margin-left: 76px;
-    margin-bottom: 20px;
-
-    color: white;
-    width: 20px;
-} */
-
-/* a.botonInfo {
-    color: #1C2D46;
-    align-self: center;
-    font-weight: 500;
-}
- */
 
 /*Modal Productos, LOS DETALLES CUANDO ENTRAS AL PRODCUTP*/
 .modal {
@@ -412,12 +333,12 @@
     width: 345px;
     height: 330px;
     border-radius: 15px;
-    border-color: var(--celeste);
+
     margin-bottom: 50px;
     position: relative;
     margin-left: -12px;
     margin-right: 50px;
-    border: 1.5px solid var(--celeste);
+
 
 }
 
@@ -455,11 +376,6 @@
 
 }
 
-/* .el_carrito { */
-/* display: none; */
-/*    height: 50px;
-    width: 50px;
-} */
 
 
 /* ADULTOS NIÑOS SERIG */
@@ -491,11 +407,9 @@
     text-align: left;
 }
 
-/* .caracteristicaColor {
-    margin-left: 20px;
-} */
 
-.colorModal1 {
+
+/* .colorModal1 {
     width: 25px;
     background-color: #EA5534;
     border-radius: 50%;
@@ -520,7 +434,7 @@
     margin-left: 5px;
     color: transparent;
     border: transparent;
-}
+} */
 
 .botonesDetalleModal {
     position: absolute;
@@ -554,7 +468,7 @@
 }
 
 .botonDetalle2:hover {
-    background-color: var(--azul);
+    background-color: var(--rosa);
     color: var(--blanco);
 }
 
@@ -619,7 +533,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+    .modal {
+        --bs-modal-width: 550px;
+    }
 
     .selectStyles {
         display: flex !important;
@@ -627,7 +543,7 @@
 
     }
 
-    .botonProductos2 {
+    /* .botonProductos2 {
         width: 250px !important;
         margin-bottom: 10px !important;
         padding-left: 10px !important;
@@ -635,41 +551,40 @@
         position: absolute !important;
         margin-top: 316px !important;
         margin-left: -30px !important;
-    }
+    } */
 
     .botonProductos1 {
-        width: 250px !important;
+        /* width: 250px !important; */
         margin-right: 0px !important;
-        padding-left: 80px !important;
+        /* padding-left: 80px !important; */
         margin-bottom: 30px !important;
     }
 
     .imgModal {
         width: 345px !important;
-        margin-left: 185px !important;
+        margin-left: 149px !important;
         position: absolute !important;
-        margin-top: -340px !important;
+        margin-top: -290px !important;
     }
 
     .textModalProducto {
         justify-content: flex-start !important;
-        margin-left: 37px !important;
-        margin-top: 0px !important;
+        margin-top: 56px !important;
+        font-size: 16px;
     }
 
     .textDescriptionModal {
-        margin-left: 22px !important;
+        text-align: center !important;
+        height: 95px;
+        margin-left: 124px !important;
         margin-top: 10px !important;
         margin-bottom: 25px !important;
     }
 
-    /* .caracteristicaColor {
-        margin-left: -173px !important;
-    } */
+
 
     .botonesDetalleModal {
         margin-top: -50px !important;
-        margin-left: 325px !important;
         position: absolute;
 
     }
@@ -682,6 +597,7 @@
         position: relative !important;
         margin-left: 30px !important;
         margin-right: 0px;
+
     }
 
 
@@ -708,17 +624,43 @@
 
     @media only screen and (max-width: 576px) {
 
+        .textModalProducto {
+            justify-content: flex-start !important;
+            margin-top: -6px !important;
+            font-size: 16px;
+        }
+
+        .textDescriptionModal {
+            text-align: center !important;
+            height: 95px;
+            margin-left: 124px !important;
+            margin-top: 10px !important;
+            margin-bottom: 25px !important;
+        }
+
+
+
+        .botonesDetalleModal {
+            margin-top: -50px !important;
+            margin-left: 207px;
+            position: absolute;
+
+        }
+
+        .imgModal {
+            height: 272px;
+        }
+
         @media only screen and (max-width: 450px) {
 
 
             .imgModal {
-                width: 320px !important;
+                width: 235px !important;
+                margin-top: -264px !important;
+                margin-left: 86px !important;
+
             }
 
-            /*  .caracteristicaColor {
-                margin-left: -88px !important;
-                margin-top: 0px !important;
-            } */
 
             .buttonCategoria {
                 margin-left: -70px !important;
@@ -726,24 +668,37 @@
 
             }
 
+            .textModalProducto {
+
+                margin-left: 150px;
+
+
+
+
+            }
+
+            .textDescriptionModal {
+                text-align: center !important;
+                height: 95px;
+                margin-left: 32px !important;
+                margin-top: 10px !important;
+                margin-bottom: 25px !important;
+            }
+
+
+
             .botonesDetalleModal {
-                margin-top: -23px !important;
-                margin-left: 60px !important;
+                margin-top: -50px !important;
+                margin-left: 45px;
+                position: absolute;
+
             }
 
-            .textBuscador {
-                padding-right: 25px !important;
+            .imgModalDetail {
+                margin-left: 0% !important;
+                width: 20% !important;
             }
 
-            .botonBuscador {
-                margin-left: 50px !important;
-                cursor: pointer !important;
-            }
-
-            .buscadorContainer {
-                margin-top: 38px !important;
-                margin-left: 28px !important;
-            }
 
             .img1 {
                 margin-left: -130px !important;

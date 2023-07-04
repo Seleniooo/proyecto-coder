@@ -1,6 +1,20 @@
 @media only screen and (min-width:1025px) {
 
 
+    .box-form {
+
+        width: 120% !important;
+    }
+
+    .eventos {
+
+
+
+        iframe {
+
+            display: none;
+        }
+    }
 
 
     .main-container-index {
@@ -21,15 +35,15 @@
 
     .nube-1 {
         position: absolute;
-        width: 25.25vw;
-        height: 25.1vw;
-        left: 22%;
-        top: 6%;
+
+        left: 15%;
+        top: 8%;
         background-image: url(../img/productos/nube-1.svg);
         background-size: contain;
         background-repeat: no-repeat;
     }
 
+    /*
 
     .nube-2 {
 
@@ -43,16 +57,13 @@
         background-repeat: no-repeat;
 
     }
-
+ */
     .nube-3 {
-        height: 21.375vw;
-        width: 22.375vw;
-        position: absolute;
+
+
         right: 3%;
         top: 9%;
-        background-image: url(../img/productos/nube-3.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
+
     }
 
     .main-contacto {
