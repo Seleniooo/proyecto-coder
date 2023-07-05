@@ -2,11 +2,18 @@
 
 
 
+
+    .box-p-contact p {
+
+        margin: 40px 0 0 0;
+    }
+
+
     .container-index {
 
 
         margin-left: 5%;
-        margin-top: 20%;
+        margin-top: 10%;
         background-size: contain;
 
 
@@ -23,7 +30,7 @@
         width: 339px;
         height: 328px;
         left: 7%;
-        top: 10%;
+        top: 7%;
 
     }
 
@@ -48,7 +55,58 @@
         width: 280px;
 
         right: 5%;
-        top: 10%;
+        top: 8%;
+
+    }
+
+    .nube-4 {
+        width: 266px;
+        height: 341.687px;
+
+        right: 25%;
+        top: 20%;
+
+
+    }
+
+    .nube-5 {
+        width: 300.991px;
+        height: 356.05px;
+
+        right: 15%;
+        top: 33%;
+
+
+    }
+
+
+    .nube-6 {
+        width: 270.998px;
+        height: 482.666px;
+
+        right: 35%;
+        top: 43%;
+
+
+    }
+
+    .nube-7 {
+        width: 348px;
+        height: 182px;
+
+        right: 7%;
+        top: 63%;
+
+
+    }
+
+    .nube-8 {
+        width: 323.735px;
+        height: 320.303px;
+
+        right: 25%;
+        top: 77%;
+
 
     }
 
@@ -94,5 +152,25 @@
 
     .numeroCarrito {
         margin-left: 32px;
+    }
+
+    .navbar-s {
+
+
+        .logo {
+            height: 42px;
+            width: 85px;
+        }
+
+        .navbar-buttons-s {
+            font-size: 16px;
+        }
+    }
+
+    footer {
+
+        .footer-container {
+            font-size: 16px;
+        }
     }
 }

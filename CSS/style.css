@@ -183,7 +183,7 @@ body a :hover :active :focus {
   justify-content: space-between;
   padding-left: 9.66%;
   padding-right: 9.66%;
-  height: 89px;
+  height: 60px;
   align-items: center;
   z-index: 3;
   position: fixed;
@@ -348,7 +348,7 @@ footer .footer-container {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 89px;
+  height: 60px;
   mix-blend-mode: overlay;
   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.231) 100%);
   background: linear-gradient(90.34deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.267) 107.87%);
@@ -459,7 +459,7 @@ footer .footer-container .links-footer-mobile {
 
 .form-contenedor {
   position: fixed;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .box-title-contact img {
@@ -473,7 +473,7 @@ footer .footer-container .links-footer-mobile {
   font-weight: 400;
   line-height: 19px;
   color: var(--azul);
-  margin: 40px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .box-form {
@@ -583,11 +583,15 @@ footer .footer-container .links-footer-mobile {
 .main-contacto {
   display: flex;
   justify-content: center;
-  height: 200vh;
-  width: auto;
 }
 
 @media only screen and (max-width: 500px) {
+  .box-p-contact p {
+    margin: 40px 0 0 0;
+  }
+  .form-contenedor {
+    margin-top: 5rem;
+  }
   .navbar-s {
     justify-content: space-between;
     padding-left: 9.66%;
@@ -764,32 +768,32 @@ footer .footer-container .links-footer-mobile {
   .nube-4 {
     width: 266px;
     height: 341.687px;
-    right: 24%;
-    top: 20%;
+    right: 13%;
+    top: 19%;
   }
   .nube-5 {
-    width: 226.991px;
-    height: 282.05px;
+    width: 266.991px;
+    height: 322.05px;
     right: 20%;
-    top: 32%;
+    top: 30%;
   }
   .nube-6 {
-    width: 270.998px;
-    height: 482.666px;
-    right: 30%;
-    top: 40%;
+    width: 240.998px;
+    height: 522.666px;
+    right: 15%;
+    top: 38%;
   }
   .nube-7 {
     width: 348px;
     height: 182px;
-    right: 8%;
-    top: 60%;
+    right: 7%;
+    top: 53%;
   }
   .nube-8 {
     width: 323.735px;
     height: 320.303px;
-    right: 23%;
-    top: 70%;
+    right: 10%;
+    top: 65%;
   }
   .body-detalles .main-detalles .eventos {
     margin-top: 8rem;
@@ -829,6 +833,15 @@ footer .footer-container .links-footer-mobile {
 
     ; */
 @media only screen and (min-width: 501px) and (max-width: 810px) {
+  .box-p-contact p {
+    margin: 40px 0 0 0;
+  }
+  .form-contenedor {
+    margin-top: 5rem;
+  }
+  .index-main {
+    width: 100vw;
+  }
   .nos-container .nos-card {
     width: 50.57vw;
   }
@@ -981,6 +994,54 @@ footer .footer-container .links-footer-mobile {
     width: 80px;
     height: 42px;
   }
+  .nube-1 {
+    width: 239px;
+    height: 228px;
+    left: 5%;
+    top: 7%;
+  }
+  .nube-2 {
+    height: 26vw;
+    width: 31vw;
+    top: 3%;
+    left: 60%;
+  }
+  .nube-3 {
+    height: 239px;
+    width: 280px;
+    right: 5%;
+    top: 10%;
+  }
+  .nube-4 {
+    width: 266px;
+    height: 341.687px;
+    right: 25%;
+    top: 20%;
+  }
+  .nube-5 {
+    width: 300.991px;
+    height: 356.05px;
+    right: 15%;
+    top: 33%;
+  }
+  .nube-6 {
+    width: 270.998px;
+    height: 482.666px;
+    right: 35%;
+    top: 43%;
+  }
+  .nube-7 {
+    width: 348px;
+    height: 182px;
+    right: 7%;
+    top: 63%;
+  }
+  .nube-8 {
+    width: 323.735px;
+    height: 320.303px;
+    right: 25%;
+    top: 77%;
+  }
   footer .footer-container p {
     left: 85%;
   }
@@ -994,32 +1055,7 @@ footer .footer-container .links-footer-mobile {
     height: 29.375vw;
     width: 35vw;
     margin-left: 5%;
-    margin-top: 18%;
-    background-size: contain;
-  }
-  .nube-1 {
-    width: 273px;
-    height: 259px;
-    left: 4%;
-    top: 5%;
-  }
-  .nube-2 {
-    height: 26vw;
-    width: 30vw;
-    top: 3%;
-    left: 40%;
-  }
-  .nube-3 {
-    height: 192px;
-    width: 225px;
-    right: 8%;
-    top: 12%;
-  }
-  .nube-4 {
-    width: 266px;
-    height: 341.687px;
-    right: 24%;
-    top: 20%;
+    margin-top: 10%;
   }
   .main-contacto .card-contacto form .form-group button {
     font-size: 10px;
@@ -1039,16 +1075,19 @@ footer .footer-container .links-footer-mobile {
   }
 }
 @media only screen and (min-width: 811px) and (max-width: 1024px) {
+  .box-p-contact p {
+    margin: 40px 0 0 0;
+  }
   .container-index {
     margin-left: 5%;
-    margin-top: 20%;
+    margin-top: 10%;
     background-size: contain;
   }
   .nube-1 {
     width: 339px;
     height: 328px;
     left: 7%;
-    top: 10%;
+    top: 7%;
   }
   .nube-2 {
     height: 26vw;
@@ -1063,7 +1102,37 @@ footer .footer-container .links-footer-mobile {
     height: 239px;
     width: 280px;
     right: 5%;
-    top: 10%;
+    top: 8%;
+  }
+  .nube-4 {
+    width: 266px;
+    height: 341.687px;
+    right: 25%;
+    top: 20%;
+  }
+  .nube-5 {
+    width: 300.991px;
+    height: 356.05px;
+    right: 15%;
+    top: 33%;
+  }
+  .nube-6 {
+    width: 270.998px;
+    height: 482.666px;
+    right: 35%;
+    top: 43%;
+  }
+  .nube-7 {
+    width: 348px;
+    height: 182px;
+    right: 7%;
+    top: 63%;
+  }
+  .nube-8 {
+    width: 323.735px;
+    height: 320.303px;
+    right: 25%;
+    top: 77%;
   }
   .main-contacto .card-contacto form .form-group button {
     font-size: 10px;
@@ -1078,6 +1147,16 @@ footer .footer-container .links-footer-mobile {
   .numeroCarrito {
     margin-left: 32px;
   }
+  .navbar-s .logo {
+    height: 42px;
+    width: 85px;
+  }
+  .navbar-s .navbar-buttons-s {
+    font-size: 16px;
+  }
+  footer .footer-container {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 1025px) {
   .box-form {
@@ -1085,6 +1164,13 @@ footer .footer-container .links-footer-mobile {
   }
   .eventos iframe {
     display: none;
+  }
+  .navbar-s .logo {
+    height: 42px;
+    width: 85px;
+  }
+  .navbar-s .navbar-buttons-s {
+    font-size: 16px;
   }
   .container-index {
     height: 25vw;
@@ -1134,6 +1220,9 @@ footer .footer-container .links-footer-mobile {
      }
 
   */
+  footer .footer-container {
+    font-size: 16px;
+  }
 }
 /* 
 main {

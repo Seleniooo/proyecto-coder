@@ -165,8 +165,10 @@
 
 /* LA PARTE DE ARRIBA DE LOS BOTONES, BOWLS, ETC */
 .selectStyles {
+
     justify-content: center;
-    margin-top: 140px;
+    margin-top: 100px;
+
 
 }
 
@@ -177,6 +179,7 @@
     justify-self: center;
     color: var(--violeta);
     cursor: pointer;
+    font-size: 16px;
 }
 
 
@@ -300,7 +303,7 @@
     /* Espacio interno del marco */
     overflow: hidden;
     /* Oculta el scroll del marco */
-    margin-top: 10px;
+    margin-top: -6px;
     /* position: fixed; */
     justify-content: center;
 }
@@ -634,6 +637,11 @@
 
     @media only screen and (max-width: 576px) {
 
+        .selectStyles {
+
+            margin-top: 145px;
+        }
+
         .textModalProducto {
             justify-content: flex-start !important;
             margin-top: -6px !important;
@@ -656,6 +664,10 @@
             margin-left: 207px;
             position: absolute;
 
+        }
+
+        .divProductos {
+            margin-bottom: 60px;
         }
 
         .imgModal {
